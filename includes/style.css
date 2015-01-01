@@ -1,0 +1,161 @@
+@import url(http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext);
+
+/*----------------------- All pages ----------------------- */
+* {
+	 margin:0px ; 
+	 padding:0px;
+}
+header,main,footer, nav, section, article, aside,body {
+	display: block;	
+}
+#wrapper {
+	width : 1005px;	
+	height : 488px; 
+	margin-top: 282px;
+	margin-right: auto;
+	margin-left: auto;
+}
+header>nav {
+	height: 28px;
+	width: 1005px;
+}
+header>nav>ul {
+	list-style-type: none;
+	display: block;
+	height: 28px;
+}
+header>nav>ul>li {
+	float: left;
+	width: 20%;
+}
+header>nav>ul>li>a {
+	display: block;
+	text-align: center;
+	color: #ffffff;
+	text-decoration: none;
+	padding-top: 7px;						/* I changed it from 5 to 7 no reason */
+	font-family: Arial;
+	font-size: 13px;
+	width: 100%;
+}
+/* fixed links to facebook and contact us */ 
+aside {
+	position: fixed;
+	height: 191px;
+	width: 22px;
+	top: 358px;
+	right: 2%;
+	background: #000000 url(../images/aside.jpg) no-repeat right;
+}
+footer {
+	background: #000000 url(../images/footer.jpg) no-repeat bottom;
+	height: 32px; 
+}
+#clear {
+	clear: both;
+}
+
+/*----------------------- Home page----------------------- */
+
+/* home page background */ 
+#hp {
+	background: #000000 url(../images/background_hp.jpg) no-repeat top;
+	background-size: 2211px 310px; 
+}
+#hp>#wrapper>main {
+	height: 460px;
+	width: 1005px;
+	background: url(../images/wrapper.jpg) no-repeat center; 
+}
+/* first section in home page*/
+#hp>#wrapper>main>section:nth-child(1)  {
+	height : 218px;
+	background: #000000 url(../images/line.jpg) no-repeat bottom;
+/*	background-size: 917px 1px; */
+}
+#hp>#wrapper>main>section:nth-child(1)>h1 {
+	font-family: Lato, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	font-size: 28px;
+	font-weight: normal;
+	text-align: center;
+	padding-top: 49px;
+	padding-bottom: 35px;
+}
+#hp>#wrapper>main>section:nth-child(1)>p {
+	font-family: Arial;
+	font-size: 12px;
+	color: #808080;
+	line-height: 28px;
+	padding-left: 41px;
+	padding-right: 45px; 	
+}
+/* second section in home page*/
+#hp>#wrapper>main>section:nth-child(2) {
+	height : 120px;
+	width: 1005px;
+	background: #000000 url(../images/line.jpg) no-repeat bottom;
+}  
+#hp>#wrapper>main>section:nth-child(2)>article{
+	width: 111px;
+	height: 12px; 
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 15px; 
+	padding-top: 21px;
+}
+#hp>#wrapper>main>section:nth-child(2)>article>h2{	
+	font-family: Arial;
+	color: #FFFFFF;
+	font-size: 16px;
+	font-weight: bold;
+	-webkit-font-smoothing: antialiased;
+	background: #000000 url(../images/down_arrow.jpg) no-repeat 102px 4px;
+}
+#hp>#wrapper>main>section:nth-child(2)>nav {
+	height: 50px;
+	width: 1005px;
+	margin-bottom: 22px;
+	background: #000000 url(../images/right_big_arrow.jpg) no-repeat 918px 0px; 
+}
+#hp>#wrapper>main>section:nth-child(2)>nav>ul{
+	list-style-type: none;
+	display: inline-block;
+	margin-top: 18px;				/* I changed it from 21 to 18 no reason */
+	margin-left: 43px;	
+}
+#hp>#wrapper>main>section:nth-child(2)>nav>ul>li {
+	float: left;
+	padding-right: 12px;
+	padding-left: 12px;	
+}
+.designer_separated {
+	background: #000000 url(../images/vertical_bar.jpg) no-repeat right center;
+}
+#hp>#wrapper>main>section:nth-child(2)>nav>ul>li>a {
+	text-align: center;
+	display: block;
+	color: #d3cfcf;
+	text-decoration: none;
+	font-family: Arial;
+	font-size: 14px;
+}
+
+/*----------------------- About page----------------------- */
+
+/* about page background */ 
+#about {
+	background: #000000 url(../images/background_hp.jpg) no-repeat top;
+	background-size: 2211px 310px; 
+}
+#about>#wrapper>main {
+	height: 460px;
+	width: 1005px;
+/*	background: url(../images/wrapper.jpg) no-repeat center;*/
+ 	background: #FFFFFF;
+}
+
+
+
+
+
