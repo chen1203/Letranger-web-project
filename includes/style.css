@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Lato);
 
 /* --------------------------------------------------- All pages --------------------------------------------------- */
 
@@ -11,10 +11,8 @@ header,main,footer, nav, section, article, aside,body {
 }
 #wrapper {
 	width : 1005px;	
-	height : 488px; 
-	margin-top: 282px;
-	margin-right: auto;
-	margin-left: auto;
+	height : 488px;
+	margin: 282px auto 0px auto; 
 }
 /*----------------------- main menu ----------------------- */
 header>nav {
@@ -57,8 +55,7 @@ aside>p {
 	font-family: Arial;
 	font-size: 14px;
 	color: #FFFFFF;
-	margin-top: 117px;
-	margin-left: 3px;
+	margin: 117px 0px 0px 3px;
 	 white-space:nowrap;
     transform-origin:50% 50%;    
     -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
@@ -78,7 +75,7 @@ footer>nav {
 footer>nav>ul {
 	list-style-type: none;
 	height: 32px;
-	margin: auto 42px;
+	margin: auto 32px;
 }
 footer>nav>ul>li {
 	float: left;
@@ -124,12 +121,13 @@ footer>nav>ul>li>a{
 #hp>#wrapper>main {
 	height: 460px;
 	width: 1005px;
-/*	background: url(../images/hp_main.jpg) no-repeat center;*/ 
+/*	background: url(../images/hp_main.jpg) no-repeat center;
+*/
 }
 /* first section in home page - title LETRANGER*/
 #hp>#wrapper>main>section:nth-child(1)  {
 	height : 218px;
-	background: url(../images/line.jpg) no-repeat bottom;
+	background: url(../images/line.jpg) no-repeat 40px bottom;	/* center?  instead of 40px */
 	background-size: 917px 1px; 
 }
 #hp>#wrapper>main>section:nth-child(1)>h1, #about>#wrapper>main>section:nth-child(1)>h1 {
@@ -138,23 +136,20 @@ footer>nav>ul>li>a{
 	font-size: 28px;
 	font-weight: normal;
 	text-align: center;
-	padding-top: 49px;
-	padding-bottom: 35px;
+	padding: 49px 0px 35px 0px;
 }
 #hp>#wrapper>main>section:nth-child(1)>p {
 	font-family: Arial;
 	font-size: 12px;
 	color: #808080;
-	line-height: 27px;		
-	padding-left: 36px;		
-	padding-top: 2px;
-	padding-right: 45px; 	
+	line-height: 27px;
+	padding: 2px 45px 0px 36px;		
 }
 /* second section in home page*/
 #hp>#wrapper>main>section:nth-child(2) {
 	height : 120px;
 	width: 1005px;
-	background: #000000 url(../images/line.jpg) no-repeat center 101px;
+	background: #000000 url(../images/line.jpg) no-repeat 40px 101px; /* center?  instead of 40px */
 }  
 #hp>#wrapper>main>section:nth-child(2)>h2{	
 	font-family: Arial;
@@ -163,8 +158,7 @@ footer>nav>ul>li>a{
 	font-weight: bold;
 	-webkit-font-smoothing: antialiased;
 	background: #000000 url(../images/down_arrow.png) no-repeat 102px 4px;
-	margin-top : 18px;
-	margin-left : 443px;
+	margin: 18px 0px 0px 443px;
 }
 #hp>#wrapper>main>section:nth-child(2)>nav {
 	height: 50px;
@@ -176,13 +170,11 @@ footer>nav>ul>li>a{
 #hp>#wrapper>main>section:nth-child(2)>nav>ul{
 	list-style-type: none;
 	display: inline-block;
-	margin-top: 18px;		
-	margin-left: 26px;		
+	margin: 18px 0px 0px 26px;
 }
 #hp>#wrapper>main>section:nth-child(2)>nav>ul>li {
 	float: left;
-	padding-right: 13px;
-	padding-left: 12px;	
+	padding: 0px 13px 0px 14px;	
 }
 .designer_separated {
 	background: #000000 url(../images/vertical_bar.jpg) no-repeat right center;
@@ -206,32 +198,28 @@ footer>nav>ul>li>a{
 #about>#wrapper>main {
 	height: 460px;
 	width: 1005px;
-	background:	 url(../images/about_main.jpg) no-repeat center;
 }
 #about>#wrapper>main>section:nth-child(1) {
 	height: 145px;
-	background: url(../images/main_bar.jpg) no-repeat center bottom;
+	background:#000000 url(../images/main_bar.jpg) no-repeat 40px bottom;
 }
 #about>#wrapper>main>section:nth-child(1)>h3 {
 	font-family: Arial;
 	font-size: 16px;
 	color: #FFFFFF;
-	padding-top: 5px;
-	padding-left: 49px;
+	padding: 5px 0px 0px 49px;
 }
 #about>#wrapper>main>section:nth-child(2) {
 	height : 207px;
 	width: 1005px;
-	background: url(../images/line.jpg) no-repeat bottom;
-	padding-top: 20px;
+	background: #000000 url(../images/line.jpg) no-repeat 40px bottom;
 }
 #about>#wrapper>main>section:nth-child(2)>p {
 	font-family: Arial;
 	font-size: 12px;
 	color: #808080;
-	line-height: 28px;
-	padding-left: 41px;
-	padding-right: 45px;
+	line-height: 22px;
+	padding: 24px 45px 0px 40px;
 } 	
 
 
