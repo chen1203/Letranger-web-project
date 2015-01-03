@@ -48,20 +48,36 @@ aside {
 	width: 22px;
 	top: 358px;
 	right: 2%;
-	background: url(../images/facebook.jpg) 0px 0px, url(../images/contact_us.jpg) 0px 102px;
+	background: url(../images/not_used/aside.jpg);
+}
+aside>a{
+	height:89px;
+	width:22px;
+	display: block;
+	text-decoration: none;
+}
+aside>a:nth-child(1) {
+	background: url(../images/facebook.jpg);
 	background-repeat: no-repeat;
 }
-aside>p {
+
+aside>a:nth-child(2) {
+    background: url(../images/contact_us.jpg);
+    background-repeat: no-repeat;
+    margin-top:13px;
+}
+aside>a:nth-child(2)>p{
 	font-family: Arial;
 	font-size: 14px;
 	color: #FFFFFF;
-	margin: 117px 0px 0px 3px;
-	 white-space:nowrap;
-    transform-origin:50% 50%;    
+	padding-left:14px; 
+	white-space:nowrap;
+    transform-origin:50% 50%;   
     -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
-   -moz-transform: rotate(90deg); 
-    -o-transform: rotate(90deg);
+   	-moz-transform: rotate(90deg); 
+    -o-transform: rotate(90deg);*/
 }
+
 /*----------------------- footer ----------------------- */
 footer {
 	background: #000000 url(../images/footer.jpg) no-repeat bottom;
