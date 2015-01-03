@@ -121,13 +121,13 @@ footer>nav>ul>li>a{
 #hp>#wrapper>main {
 	height: 460px;
 	width: 1005px;
-/*	background: url(../images/hp_main.jpg) no-repeat center;
-*/
+/*	background: url(../images/not_used/hp_main.jpg) no-repeat center;	*/
+
 }
 /* first section in home page - title LETRANGER*/
 #hp>#wrapper>main>section:nth-child(1)  {
 	height : 218px;
-	background: url(../images/line.jpg) no-repeat 40px bottom;	/* center?  instead of 40px */
+	background: #000000 url(../images/line.jpg) no-repeat 40px bottom;	/* center?  instead of 40px */
 	background-size: 917px 1px; 
 }
 #hp>#wrapper>main>section:nth-child(1)>h1, #about>#wrapper>main>section:nth-child(1)>h1 {
