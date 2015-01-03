@@ -11,7 +11,7 @@ header,main,footer, nav, section, article, aside,body {
 }
 #wrapper {
 	width : 1005px;	
-	height : 488px;
+	min-height : 488px;
 	margin: 282px auto 0px auto; 
 }
 /*----------------------- main menu ----------------------- */
@@ -143,13 +143,13 @@ footer a{
 #hp>#wrapper>main {
 	height: 460px;
 	width: 1005px;
-/*	background: url(../images/not_used/hp_main.jpg) no-repeat center;	*/
-
+/*	background: url(../images/hp_main.jpg) no-repeat center;
+*/
 }
 /* first section in home page - title LETRANGER*/
 #hp>#wrapper>main>section:nth-child(1)  {
 	height : 218px;
-	background: #000000 url(../images/line.jpg) no-repeat 40px bottom;	/* center?  instead of 40px */
+	background: url(../images/line.jpg) no-repeat 40px bottom;	/* center?  instead of 40px */
 	background-size: 917px 1px; 
 }
 #hp>#wrapper>main>section:nth-child(1)>h1, #about>#wrapper>main>section:nth-child(1)>h1 {
