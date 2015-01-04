@@ -9,14 +9,10 @@
 header,main,footer, nav, section, article, aside,body {
 	display: block;	
 }
-html, body {
-	height: 100%;
-	/*overflow:hidden;*/
-}
 #wrapper {
 	width : 1005px;	
 	min-height: 100%;
-	margin: 282px auto 0px auto; 
+	margin: 282px auto 0px auto;
 }
 /*----------------------- main menu ----------------------- */
 header>nav {
