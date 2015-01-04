@@ -14,6 +14,11 @@ header,main,footer, nav, section, article, aside,body {
 	min-height: 100%;
 	margin: 282px auto 0px auto;
 }
+#wrapper>main {
+	height: 460px;
+	width: 1005px;
+}
+
 /*----------------------- main menu ----------------------- */
 header>nav {
 	height: 28px;
@@ -40,6 +45,7 @@ header>nav>ul>li>a {
 	width: 100%;
 	height: 21px;
 }
+
 /*----------------------- static aside ----------------------- */
 /* fixed links to facebook and contact us */ 
 aside {
@@ -49,7 +55,7 @@ aside {
 	top: 358px;
 	right: 2%;
 }
-aside>a{
+aside>a {
 	height:89px;
 	width:22px;
 	display: block;
@@ -64,7 +70,7 @@ aside>a:nth-child(2) {
     background-repeat: no-repeat;
     margin-top:13px;
 }
-aside>a:nth-child(2)>p{
+aside>a:nth-child(2)>p {
 	font-family: Arial;
 	font-size: 14px;
 	color: #FFFFFF;
@@ -78,7 +84,6 @@ aside>a:nth-child(2)>p{
 
 /*----------------------- footer ----------------------- */
 footer {
-/*	background: #000000 url(../images/not_used/footer.jpg) no-repeat bottom;*/
 	background: #000000 url(../images/footer.jpg) no-repeat bottom;
 	height: 32px;
 }
@@ -88,7 +93,7 @@ footer>section {
 	margin:auto;
 	position: relative;
 }
-footer>section>a{
+footer>section>a {
 	display: block;
 	position: absolute;
 	text-decoration: none;
@@ -133,13 +138,11 @@ footer>section>a:nth-child(5) {
 #hp>#wrapper>main {
 	height: 460px;
 	width: 1005px;
-/*	background: url(../not_used/images/hp_main.jpg) no-repeat center;
-*/
 }
 /* first section in home page - title LETRANGER*/
-#hp>#wrapper>main>section:nth-child(1)  {
+#hp>#wrapper>main>section:nth-child(1) {
 	height : 218px;
-	background: #000000 url(../images/line.jpg) no-repeat 40px bottom;	/* center?  instead of 40px */
+	background: #000000 url(../images/line.jpg) no-repeat 40px bottom;	
 	background-size: 917px 1px; 
 }
 #hp>#wrapper>main>section:nth-child(1)>h1, #about>#wrapper>main>section:nth-child(1)>h1 {
@@ -161,9 +164,9 @@ footer>section>a:nth-child(5) {
 #hp>#wrapper>main>section:nth-child(2) {
 	height : 120px;
 	width: 1005px;
-	background: #000000 url(../images/line.jpg) no-repeat 40px 101px; /* center?  instead of 40px */
+	background: #000000 url(../images/line.jpg) no-repeat 40px 101px; 
 }  
-#hp>#wrapper>main>section:nth-child(2)>h2{	
+#hp>#wrapper>main>section:nth-child(2)>h2 {	
 	font-family: Arial;
 	color: #FFFFFF;
 	font-size: 16px;
@@ -179,7 +182,7 @@ footer>section>a:nth-child(5) {
 	background: #000000 url(../images/right_big_arrow.png) no-repeat 914px 0px;
 	background-size: 42px 50px; 
 }
-#hp>#wrapper>main>section:nth-child(2)>nav>ul{
+#hp>#wrapper>main>section:nth-child(2)>nav>ul {
 	list-style-type: none;
 	display: inline-block;
 	margin: 18px 0px 0px 26px;
@@ -207,10 +210,6 @@ footer>section>a:nth-child(5) {
 	background: #000000 url(../images/about_bg.jpg) no-repeat top;
 	background-size: 2211px 310px; 
 }
-#about>#wrapper>main {
-	height: 460px;
-	width: 1005px;
-}
 #about>#wrapper>main>section:nth-child(1) {
 	height: 145px;
 	background:#000000 url(../images/main_bar.jpg) no-repeat 40px bottom;
@@ -233,6 +232,3 @@ footer>section>a:nth-child(5) {
 	line-height: 22px;
 	padding: 24px 45px 0px 40px;
 } 	
-
-
-
