@@ -77,6 +77,7 @@ aside>a:nth-child(2)>p {
 	padding-left:14px; 
 	white-space:nowrap;
     transform-origin:50% 50%;   
+    transform: rotate(90deg);
     -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
    	-moz-transform: rotate(90deg); 
     -o-transform: rotate(90deg);
