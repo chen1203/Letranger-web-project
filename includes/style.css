@@ -9,6 +9,7 @@
 header,main,footer, nav, section, article, aside,body {
 	display: block;	
 }
+<<<<<<< HEAD
 html, body {
 	margin: 0px;
 	padding: 0px;
@@ -17,6 +18,12 @@ html, body {
 	width : 1005px;	
 /*	height: 100%;*/
 	margin: 282px auto 0px auto; 
+=======
+#wrapper {
+	width : 1005px;	
+	min-height: 100%;
+	margin: 282px auto 0px auto;
+>>>>>>> origin/master
 }
 /*----------------------- main menu ----------------------- */
 header>nav {
