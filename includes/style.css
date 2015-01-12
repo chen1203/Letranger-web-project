@@ -23,17 +23,17 @@ header>nav {
 	height: 28px;
 	width: 1005px;
 }
-header>nav>ul {
+.top_menu {
 	list-style-type: none;
 	display: block;
 	height: 28px;
 }
-header>nav>ul>li {
+.top_menu>li {
 	float: left;
 	width: 20%;
 	height: 100%;
 }
-header>nav>ul>li>a {
+.top_menu>li>a {
 	display: block;
 	text-align: center;
 	color: #ffffff;
@@ -45,7 +45,7 @@ header>nav>ul>li>a {
 	height: 21px;
 	text-shadow:0px -1px 1px #222222;
 }
-header>nav>ul>li>a:hover {
+.top_menu>li>a:hover {
 	text-shadow: 0px 0px 6px rgba(255,255,255,1);		/* glory */
 	font-size: 14px;
 }
@@ -86,7 +86,6 @@ aside>a:nth-child(2)>p {
    	-moz-transform: rotate(90deg); 
     -o-transform: rotate(90deg);
 }
-
 /*----------------------- footer ----------------------- */
 footer {
 	background: #000000 url(../images/footer.jpg) no-repeat bottom;
@@ -140,25 +139,23 @@ footer>section>a:nth-child(5) {
 	background: #000000 url(../images/hp_bg.jpg) no-repeat top;
 	background-size: 2211px 310px; 
 }
-#hp>#wrapper>main {
-	height: 460px;
-	width: 1005px;
-}
 /* first section in home page - title LETRANGER*/
-#hp>#wrapper>main>section:nth-child(1) {
+#hp main>section:nth-child(1) {
 	height : 218px;
 	background: #000000 url(../images/line.jpg) no-repeat 40px bottom;	
 	background-size: 917px 1px; 
 }
-#hp>#wrapper>main>section:nth-child(1)>h1, #about>#wrapper>main>section:nth-child(1)>h1 {
+#logo{
+	display: block;
+	text-align: center;
+	padding: 49px 0px 35px 0px;
 	font-family: Lato, Arial, Helvetica, sans-serif;
 	color: #FFFFFF;
 	font-size: 28px;
 	font-weight: normal;
-	text-align: center;
-	padding: 49px 0px 35px 0px;
+	text-decoration: none;
 }
-#hp>#wrapper>main>section:nth-child(1)>p {
+#introduction{
 	font-family: Arial;
 	font-size: 12px;
 	color: #808080;
@@ -166,12 +163,12 @@ footer>section>a:nth-child(5) {
 	padding: 2px 45px 0px 36px;		
 }
 /* second section in home page*/
-#hp>#wrapper>main>section:nth-child(2) {
+#hp main>section:nth-child(2) {
 	height : 120px;
 	width: 1005px;
 	background: #000000 url(../images/line.jpg) no-repeat 40px 101px; 
 }  
-#hp>#wrapper>main>section:nth-child(2)>h2 {	
+#designers_title {	
 	font-family: Arial;
 	color: #FFFFFF;
 	font-size: 16px;
@@ -180,27 +177,27 @@ footer>section>a:nth-child(5) {
 	background: #000000 url(../images/down_arrow.png) no-repeat 102px 4px;
 	margin: 18px 0px 0px 443px;
 }
-#hp>#wrapper>main>section:nth-child(2)>nav {
+#designers_menu {
 	height: 50px;
 	width: 1005px;
 	margin-top: 12px;
 	background: #000000 url(../images/right_big_arrow.png) no-repeat 914px 0px;
 	background-size: 42px 50px; 
 }
-#hp>#wrapper>main>section:nth-child(2)>nav>ul {
+#designers_menu>ul {
 	list-style-type: none;
 	display: inline-block;
 	margin: 18px 0px 0px 26px;
 }
-#hp>#wrapper>main>section:nth-child(2)>nav>ul>li {
+#designers_menu>ul>li {
 	float: left;
 	padding: 0px 13px 0px 14px;
 	background: #000000 url(../images/vertical_bar.jpg) no-repeat right center;	
 }
-#hp>#wrapper>main>section:nth-child(2)>nav>ul>li:last-child {
+#designers_menu>ul>li:last-child {
 	background: none;
 }
-#hp>#wrapper>main>section:nth-child(2)>nav>ul>li>a {
+#designers_menu li>a {
 	text-align: center;
 	display: block;
 	color: #d3cfcf;
@@ -216,22 +213,19 @@ footer>section>a:nth-child(5) {
 	background: #000000 url(../images/about_bg.jpg) no-repeat top;
 	background-size: 2211px 310px; 
 }
-#about>#wrapper>main>section:nth-child(1) {
-	height: 145px;
-	background:#000000 url(../images/main_bar.jpg) no-repeat 40px bottom;
+#about_info {
+	height : 230px; /* 207 */
+	width: 1005px;
+	background: url(../images/main_bar.jpg) no-repeat 40px top, url(../images/line.jpg) no-repeat 40px bottom;
 }
-#about>#wrapper>main>section:nth-child(1)>h3 {
+#about_info>h1{
 	font-family: Arial;
 	font-size: 16px;
 	color: #FFFFFF;
 	padding: 5px 0px 0px 49px;
+	margin-bottom: 4px;
 }
-#about>#wrapper>main>section:nth-child(2) {
-	height : 207px;
-	width: 1005px;
-	background: #000000 url(../images/line.jpg) no-repeat 40px bottom;
-}
-#about>#wrapper>main>section:nth-child(2)>p {
+#about_info>p {
 	font-family: Arial;
 	font-size: 12px;
 	color: #808080;
