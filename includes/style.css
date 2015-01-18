@@ -140,12 +140,12 @@ footer>section>a:nth-child(5) {
 	background-size: 2211px 310px; 
 }
 /* first section in home page - title LETRANGER*/
-#hp main>section:nth-child(1) {
+#hp_info{
 	height : 218px;
 	background: #000000 url(../images/line.jpg) no-repeat 40px bottom;	
 	background-size: 917px 1px; 
 }
-#logo{
+#logo {
 	display: block;
 	text-align: center;
 	padding: 49px 0px 35px 0px;
@@ -155,7 +155,7 @@ footer>section>a:nth-child(5) {
 	font-weight: normal;
 	text-decoration: none;
 }
-#introduction{
+#introduction {
 	font-family: Arial;
 	font-size: 12px;
 	color: #808080;
@@ -163,12 +163,12 @@ footer>section>a:nth-child(5) {
 	padding: 2px 45px 0px 36px;		
 }
 /* second section in home page*/
-#hp main>section:nth-child(2) {
+#designers_area {
 	height : 120px;
 	width: 1005px;
 	background: #000000 url(../images/line.jpg) no-repeat 40px 101px; 
 }  
-#designers_title {	
+#designers_area>h2 {	
 	font-family: Arial;
 	color: #FFFFFF;
 	font-size: 16px;
@@ -177,27 +177,27 @@ footer>section>a:nth-child(5) {
 	background: #000000 url(../images/down_arrow.png) no-repeat 102px 4px;
 	margin: 18px 0px 0px 443px;
 }
-#designers_menu {
+#designers_area>nav {
 	height: 50px;
 	width: 1005px;
 	margin-top: 12px;
 	background: #000000 url(../images/right_big_arrow.png) no-repeat 914px 0px;
 	background-size: 42px 50px; 
 }
-#designers_menu>ul {
+#designers_menu {
 	list-style-type: none;
 	display: inline-block;
 	margin: 18px 0px 0px 26px;
 }
-#designers_menu>ul>li {
+#designers_menu>li {
 	float: left;
 	padding: 0px 13px 0px 14px;
 	background: #000000 url(../images/vertical_bar.jpg) no-repeat right center;	
 }
-#designers_menu>ul>li:last-child {
+#designers_menu>li:last-child {
 	background: none;
 }
-#designers_menu li>a {
+#designers_menu>li>a {
 	text-align: center;
 	display: block;
 	color: #d3cfcf;
@@ -218,7 +218,7 @@ footer>section>a:nth-child(5) {
 	width: 1005px;
 	background: url(../images/main_bar.jpg) no-repeat 40px top, url(../images/line.jpg) no-repeat 40px bottom;
 }
-#about_info>h1{
+#about_info>h1 {
 	font-family: Arial;
 	font-size: 16px;
 	color: #FFFFFF;
