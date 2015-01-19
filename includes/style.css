@@ -13,24 +13,24 @@ header,main,footer, nav, section, article, aside,body {
 	min-height: 100%;
 	margin: 282px auto 0px auto;
 }
+#wrapper>main { 	/* for spacing in small laptop */ 
+	margin-bottom: 40px;
+}
+/*
 #about>#wrapper>main,#hp>#wrapper>main {
-	min-height: 460px;
-	width: 1005px;
+	min-height: 342px;
 }
 #articles>#wrapper>main {
-	min-height: 525px;
-	width: 1005px;
+	min-height: 407px;
 }
+*/
 
-/* --------------------------------------------------- Default pages --------------------------------------------------- */
-#about,#articles {
-	background: #000000 url(../images/about_bg.jpg) no-repeat top;
-	background-size: 2211px 310px; 
-}
 /*----------------------- main menu ----------------------- */
+header {
+	height: 146px;
+}
 header>nav {
 	height: 28px;
-	width: 1005px;
 }
 .top_menu {
 	list-style-type: none;
@@ -57,6 +57,16 @@ header>nav {
 .top_menu>li>a:hover {
 	text-shadow: 0px 0px 6px rgba(255,255,255,1);		/* glory */
 	font-size: 14px;
+}
+#logo {
+	display: block;
+	text-align: center;
+	padding: 49px 0px 35px 0px;
+	font-family: Lato, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	font-size: 28px;
+	font-weight: normal;
+	text-decoration: none;
 }
 
 /*----------------------- static aside ----------------------- */
@@ -146,23 +156,13 @@ footer>section>a:nth-child(5) {
 /* home page background */ 
 #hp {
 	background: #000000 url(../images/hp_bg.jpg) no-repeat top;
-	background-size: 2211px 310px; 
+/*	background-size: 2211px 310px; */ 
 }
 /* first section in home page - title LETRANGER*/
-#hp_info{
-	height : 100px; /*changed from 218 because logo was transformed outside*/
+#hp_info {
+	height : 100px; 
 	background: #000000 url(../images/line.jpg) no-repeat 40px bottom;	
-	background-size: 917px 1px; 
-}
-#logo {
-	display: block;
-	text-align: center;
-	padding: 49px 0px 35px 0px;
-	font-family: Lato, Arial, Helvetica, sans-serif;
-	color: #FFFFFF;
-	font-size: 28px;
-	font-weight: normal;
-	text-decoration: none;
+/*	background-size: 917px 1px; */ 
 }
 #hp_info>p {
 	font-family: Arial;
@@ -215,6 +215,14 @@ footer>section>a:nth-child(5) {
 	font-size: 14px;
 }
 
+/* ------------------------------------------------- Textual pages ------------------------------------------------- */
+
+#textual_pages {
+/*	background: #000000 url(../images/check/textual_pages_bg.jpg) no-repeat top; */
+	background: #000000 url(../images/textual_pages_bg.jpg) no-repeat top; 
+/*	background-size: 2211px 310px; */ 
+}
+
 /* --------------------------------------------------- About page --------------------------------------------------- */
 
 #about_info {
@@ -243,41 +251,43 @@ footer>section>a:nth-child(5) {
 	height : 27px; 
 	background: url(../images/main_bar.jpg) no-repeat 40px top;
 	width: 1005px;
+	position: relative;
 }
 /*the styling of h1 is in about page*/
-
-
-
-#designers_menu {
+#articles_types{
 	list-style-type: none;
 	display: inline-block;
-	margin: 18px 0px 0px 26px;
+	margin: 7px 0px 0px 26px;
+	position: absolute;
+	top:0px;
+	right: 40px;
 }
-#designers_menu>li {
+#articles_types>li {
 	float: left;
 	padding: 0px 13px 0px 14px;
-	background: #000000 url(../images/vertical_bar.jpg) no-repeat right center;	
+	background: url(../images/vertical_bar.jpg) no-repeat right center;	
 }
-#designers_menu>li:last-child {
+#articles_types>li:last-child {
 	background: none;
 }
-#designers_menu>li>a {
+#articles_types>li>a {
 	text-align: center;
 	display: block;
-	color: #d3cfcf;
+	color: #bcbcbc;
 	text-decoration: none;
 	font-family: Arial;
-	font-size: 14px;
+	font-size: 13px;
 }
-
-
-
+#articles_types>li:first-child>a {
+	color: #FFFFFF;
+}
 #all_articles{
 	height : 342px;
 }
 #all_articles>article{
 	width: 1005px;
-	background:url(../images/line.jpg) no-repeat 40px bottom;	
+	background:url(../images/line.jpg) no-repeat 40px bottom;
+	position: relative; 	
 }
 #all_articles>article:nth-child(1){
 	height : 168px;
@@ -298,5 +308,20 @@ footer>section>a:nth-child(5) {
 	line-height: 22px;
 	padding: 12px 45px 0px 40px;
 } 
-
-
+.read_more_link {
+	display: block;
+	width: 78px;
+	height: 18px;
+	background:url(../images/read_more.jpg) no-repeat;
+	position: absolute;
+	right: 40px;
+	bottom: 1px;
+	text-align: center;
+	text-decoration: none;
+}
+.read_more_link>p{
+	padding: 2%;
+	font-family: arial;
+	font-size: 12px;
+	color: #FFFFFF;
+}
