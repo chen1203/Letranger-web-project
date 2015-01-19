@@ -13,11 +13,20 @@ header,main,footer, nav, section, article, aside,body {
 	min-height: 100%;
 	margin: 282px auto 0px auto;
 }
-#wrapper>main {
-	height: 460px;
+#about>#wrapper>main,#hp>#wrapper>main {
+	min-height: 460px;
+	width: 1005px;
+}
+#articles>#wrapper>main {
+	min-height: 525px;
 	width: 1005px;
 }
 
+/* --------------------------------------------------- Default pages --------------------------------------------------- */
+#about,#articles {
+	background: #000000 url(../images/about_bg.jpg) no-repeat top;
+	background-size: 2211px 310px; 
+}
 /*----------------------- main menu ----------------------- */
 header>nav {
 	height: 28px;
@@ -141,7 +150,7 @@ footer>section>a:nth-child(5) {
 }
 /* first section in home page - title LETRANGER*/
 #hp_info{
-	height : 218px;
+	height : 100px; /*changed from 218 because logo was transformed outside*/
 	background: #000000 url(../images/line.jpg) no-repeat 40px bottom;	
 	background-size: 917px 1px; 
 }
@@ -155,7 +164,7 @@ footer>section>a:nth-child(5) {
 	font-weight: normal;
 	text-decoration: none;
 }
-#introduction {
+#hp_info>p {
 	font-family: Arial;
 	font-size: 12px;
 	color: #808080;
@@ -208,17 +217,12 @@ footer>section>a:nth-child(5) {
 
 /* --------------------------------------------------- About page --------------------------------------------------- */
 
-/* about page background */ 
-#about {
-	background: #000000 url(../images/about_bg.jpg) no-repeat top;
-	background-size: 2211px 310px; 
-}
 #about_info {
 	height : 230px; /* 207 */
 	width: 1005px;
 	background: url(../images/main_bar.jpg) no-repeat 40px top, url(../images/line.jpg) no-repeat 40px bottom;
 }
-#about_info>h1 {
+#about_info>h1,#articles_title>h1 {
 	font-family: Arial;
 	font-size: 16px;
 	color: #FFFFFF;
@@ -231,4 +235,68 @@ footer>section>a:nth-child(5) {
 	color: #808080;
 	line-height: 22px;
 	padding: 24px 45px 0px 40px;
-} 	
+} 
+
+/* --------------------------------------------------- Articles page --------------------------------------------------- */
+
+#articles_title {
+	height : 27px; 
+	background: url(../images/main_bar.jpg) no-repeat 40px top;
+	width: 1005px;
+}
+/*the styling of h1 is in about page*/
+
+
+
+#designers_menu {
+	list-style-type: none;
+	display: inline-block;
+	margin: 18px 0px 0px 26px;
+}
+#designers_menu>li {
+	float: left;
+	padding: 0px 13px 0px 14px;
+	background: #000000 url(../images/vertical_bar.jpg) no-repeat right center;	
+}
+#designers_menu>li:last-child {
+	background: none;
+}
+#designers_menu>li>a {
+	text-align: center;
+	display: block;
+	color: #d3cfcf;
+	text-decoration: none;
+	font-family: Arial;
+	font-size: 14px;
+}
+
+
+
+#all_articles{
+	height : 342px;
+}
+#all_articles>article{
+	width: 1005px;
+	background:url(../images/line.jpg) no-repeat 40px bottom;	
+}
+#all_articles>article:nth-child(1){
+	height : 168px;
+}
+#all_articles>article:nth-child(2){
+	height : 173px;
+}
+#all_articles>article>h2{
+	font-family: Arial;
+	font-size: 13px;
+	color: #ffffff;
+	padding: 32px 45px 0px 40px;
+}
+#all_articles>article>p {
+	font-family: Arial;
+	font-size: 12px;
+	color: #808080;
+	line-height: 22px;
+	padding: 12px 45px 0px 40px;
+} 
+
+
