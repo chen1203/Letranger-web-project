@@ -155,7 +155,7 @@ footer>section>a:nth-child(5) {
 
 /* home page background */ 
 #hp {
-	background: #000000 url(../images/hp_bg.jpg) no-repeat top;
+	background: #000000 url(../images/hp_bg.jpg) repeat-x top;
 /*	background-size: 2211px 310px; */ 
 }
 /* first section in home page - title LETRANGER*/
