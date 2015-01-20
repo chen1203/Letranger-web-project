@@ -220,7 +220,8 @@ footer>section>a:nth-child(5) {
 #textual_pages {
 /*	background: #000000 url(../images/check/textual_pages_bg.jpg) no-repeat top; */
 	background: #000000 url(../images/textual_pages_bg.jpg) no-repeat top; 
-/*	background-size: 2211px 310px; */ 
+	background-size: 2211px 310px; 
+	background-repeat: repeat-x; /*for the background scrolling*/
 }
 
 /* --------------------------------------------------- About page --------------------------------------------------- */
