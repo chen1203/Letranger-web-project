@@ -160,7 +160,7 @@ footer>section>a:nth-child(5) {
 }
 /* first section in home page - title LETRANGER*/
 #hp_info {
-	height : 100px; 
+	/*height : 100px;*/
 	background: #000000 url(../images/line.jpg) no-repeat 40px bottom;	
 /*	background-size: 917px 1px; */ 
 }
@@ -169,7 +169,7 @@ footer>section>a:nth-child(5) {
 	font-size: 12px;
 	color: #808080;
 	line-height: 27px;
-	padding: 2px 45px 0px 36px;		
+	padding: 2px 45px 17px 36px;		
 }
 /* second section in home page*/
 #designers_area {
@@ -218,16 +218,14 @@ footer>section>a:nth-child(5) {
 /* ------------------------------------------------- Textual pages ------------------------------------------------- */
 
 #textual_pages {
-/*	background: #000000 url(../images/check/textual_pages_bg.jpg) no-repeat top; */
-	background: #000000 url(../images/textual_pages_bg.jpg) no-repeat top; 
+	background: #000000 url(../images/textual_pages_bg.jpg) repeat-x  top;
 	background-size: 2211px 310px; 
-	background-repeat: repeat-x; /*for the background scrolling*/
 }
 
 /* --------------------------------------------------- About page --------------------------------------------------- */
 
 #about_info {
-	height : 230px; /* 207 */
+	/*height : 230px; /* 207 */
 	width: 1005px;
 	background: url(../images/main_bar.jpg) no-repeat 40px top, url(../images/line.jpg) no-repeat 40px bottom;
 }
@@ -243,7 +241,7 @@ footer>section>a:nth-child(5) {
 	font-size: 12px;
 	color: #808080;
 	line-height: 22px;
-	padding: 24px 45px 0px 40px;
+	padding: 24px 45px 25px 40px;
 } 
 
 /* --------------------------------------------------- Articles page --------------------------------------------------- */
@@ -291,23 +289,28 @@ footer>section>a:nth-child(5) {
 	position: relative; 	
 }
 #all_articles>article:nth-child(1){
-	height : 168px;
+	/*height : 168px;*/
 }
 #all_articles>article:nth-child(2){
-	height : 173px;
+	/*height : 173px;*/
+}
+#all_articles>article:nth-child(1)>h2{
+	padding: 30px 45px 0px 39px;
+}
+#all_articles>article:nth-child(2)>h2{
+	padding: 35px 45px 0px 38px;	
 }
 #all_articles>article>h2{
 	font-family: Arial;
 	font-size: 13px;
 	color: #ffffff;
-	padding: 32px 45px 0px 40px;
 }
 #all_articles>article>p {
 	font-family: Arial;
 	font-size: 12px;
 	color: #808080;
 	line-height: 22px;
-	padding: 12px 45px 0px 40px;
+	padding: 5px 45px 30px 39px;
 } 
 .read_more_link {
 	display: block;
@@ -315,7 +318,7 @@ footer>section>a:nth-child(5) {
 	height: 18px;
 	background:url(../images/read_more.jpg) no-repeat;
 	position: absolute;
-	right: 40px;
+	right: 47px;
 	bottom: 1px;
 	text-align: center;
 	text-decoration: none;
