@@ -14,6 +14,19 @@ $(document).ready(function() {
    }
 });
 
+
+$(document).ready(function(){
+
+	$(".btn-slide").click(function(){
+		$("#openFotter").slideToggle("slow");
+		$("html, body").animate({ scrollTop: $(document).height() }, "slow");
+		$(this).toggleClass("active"); return false;
+	});
+});
+
+
+
+
 var BackgroundScroll = function(params) {
 	params = $.extend({
 		scrollSpeed: 20,

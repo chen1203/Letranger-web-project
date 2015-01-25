@@ -25,6 +25,7 @@ header,main,footer, nav, section, article, aside,body {
 }
 */
 
+
 /*----------------------- main menu ----------------------- */
 header {
 	height: 146px;
@@ -150,7 +151,20 @@ footer>section>a:nth-child(5) {
 	font-size: 12px;
 	right: 47px;
 }
-
+#openFotter{
+	background-color: #171717;
+	display: none;
+	z-index: 1;
+}
+#openFotterCentered{
+	height: 122px;
+	width : 1005px;
+	margin: 0 auto;
+	border:1px solid white;
+}
+.active {
+	background-position: right 12px;
+}
 /* --------------------------------------------------- Home page --------------------------------------------------- */
 
 /* home page background */ 
