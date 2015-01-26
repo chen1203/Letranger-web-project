@@ -17,17 +17,26 @@ $(document).ready(function() {
 
 $(document).ready(function(){
 
-	$(".btn-slide").click(function(){
+	$("#login_logout-slide").click(function(){
 		$("#openFotter").slideToggle("slow");
 		$("html, body").animate({ scrollTop: $(document).height() }, "slow");
-		$(this).toggleClass("active"); return false;
+		$(this).toggleClass("activeLoginLogout"); 
+		$("#online_shop-slide").toggleClass("activeOnlineShop"); return false;
+	});
+	
+	$("#online_shop-slide").click(function(){
+		$("#openFotter").slideToggle("slow");
+		$("html, body").animate({ scrollTop: $(document).height() }, "slow");
+		$(this).toggleClass("activeOnlineShop"); 
+		$("#login_logout-slide").toggleClass("activeLoginLogout"); return false;
 	});
 });
 
 
+		
+		
 
-
-var BackgroundScroll = function(params) {
+/*var BackgroundScroll = function(params) {
 	params = $.extend({
 		scrollSpeed: 20,
 		imageWidth: $('#textual_pages').width(),
@@ -57,4 +66,4 @@ var BackgroundScroll = function(params) {
 };
 
 var scroll = new BackgroundScroll();
-scroll.init();
+scroll.init();*/

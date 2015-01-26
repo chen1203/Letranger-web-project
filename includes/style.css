@@ -162,8 +162,11 @@ footer>section>a:nth-child(5) {
 	margin: 0 auto;
 	border:1px solid white;
 }
-.active {
-	background-position: right 12px;
+.activeOnlineShop{
+	background: url(../images/down_arrow.png) no-repeat 103px 5px !important;
+}
+.activeLoginLogout{
+	background: url(../images/down_arrow.png) no-repeat right 4px !important;	
 }
 /* --------------------------------------------------- Home page --------------------------------------------------- */
 
