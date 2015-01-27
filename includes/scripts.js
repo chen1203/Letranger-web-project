@@ -2,7 +2,7 @@
  *  function to set the footer to bottom of the page while considering the screen size
  */
 
-$(document).ready(function() {
+/*$(document).ready(function() {
 		//var currentId = $('body').attr('id');
 	  // if (currentId != "articles"){	
 			var docHeight = $(window).height();
@@ -12,29 +12,31 @@ $(document).ready(function() {
 			    		$('footer').css('margin-top',(docHeight - footerTop) + 'px');
 	   		//}
    }
-});
+});*/
+
+
+/*function positionFooter() { 
+	var mFoo = $("footer"); 
+	if ((($(document.body).height() + mFoo.outerHeight()) < $(window).height() && mFoo.css("position") == "fixed") 
+	|| ($(document.body).height() < $(window).height() && mFoo.css("position") != "fixed")) { 
+		mFoo.css({ position: "fixed", bottom: "0px" }); } else { mFoo.css({ position: "static" }); 
+	} 
+} 
+
+$(document).ready(function () { 
+	positionFooter(); $(window).scroll(positionFooter); 
+	$(window).resize(positionFooter); $(window).load(positionFooter); });*/
 
 
 $(document).ready(function(){
 
-	$("#login_logout-slide").click(function(){
+	$(".btn-slide").click(function(){
 		$("#openFotter").slideToggle("slow");
 		$("html, body").animate({ scrollTop: $(document).height() }, "slow");
-		$(this).toggleClass("activeLoginLogout"); 
+		$("#login_logout-slide").toggleClass("activeLoginLogout"); 
 		$("#online_shop-slide").toggleClass("activeOnlineShop"); return false;
 	});
-	
-	$("#online_shop-slide").click(function(){
-		$("#openFotter").slideToggle("slow");
-		$("html, body").animate({ scrollTop: $(document).height() }, "slow");
-		$(this).toggleClass("activeOnlineShop"); 
-		$("#login_logout-slide").toggleClass("activeLoginLogout"); return false;
-	});
 });
-
-
-		
-		
 
 /*var BackgroundScroll = function(params) {
 	params = $.extend({
