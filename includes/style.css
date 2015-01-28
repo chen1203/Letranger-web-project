@@ -111,8 +111,8 @@ footer {
 	background: #000000 url(../images/footer.jpg) no-repeat bottom;
 	height: 32px;
 	width: 100%; 
-	position: fixed;
-	bottom: 0px;
+	/*bottom: 0px;*/
+	/*position: fixed;*/
 }
 footer>section {
 	height: 32px;
@@ -154,12 +154,13 @@ footer>section>a:nth-child(5) {
 	font-size: 12px;
 	right: 47px;
 }
-#openFotter{
+#openFooter{
 	display: none;
 	background-color: #171717;
-	margin-bottom: 32px;
+	position:fixed;
+	width:100%;
 }
-#openFotterCentered{
+#openFooterCentered{
 	height: 122px;
 	width : 1005px;
 	margin: 0 auto;
@@ -234,49 +235,49 @@ footer>section>a:nth-child(5) {
 	right:57px;
 	background: url(../images/form_buttons.jpg) no-repeat;
 }
-#openFotterCentered>section:nth-child(2){
+#openFooterCentered>section:nth-child(2){
 	width:619px;
 	height:122px;
 	float:left;
 	position: relative;
 }
-#openFotterCentered>section:nth-child(2)>a{
+#openFooterCentered>section:nth-child(2)>a{
 	text-decoration: none;
 	position: absolute;
 }
-#openFotterCentered>section:nth-child(2)>a:not(:first-child){
+#openFooterCentered>section:nth-child(2)>a:not(:first-child){
 	color: #b0b0b0;
 	font-size: 12px;
 	font-family: Arial;
 }
-#openFotterCentered>section:nth-child(2)>a:nth-child(1){
+#openFooterCentered>section:nth-child(2)>a:nth-child(1){
 	font-size: 14px;
 	font-family: Arial; /* NEED TO CHANGE TO DIFERENT FONT*/
 	color:#ffffff;
 	top:13px;
 	left:65px;
 }
-#openFotterCentered>section:nth-child(2)>a:nth-child(2){
+#openFooterCentered>section:nth-child(2)>a:nth-child(2){
 	top:45px;
 	left:65px;
 }
-#openFotterCentered>section:nth-child(2)>a:nth-child(3){
+#openFooterCentered>section:nth-child(2)>a:nth-child(3){
 	top:45px;
 	left:159px;
 }
-#openFotterCentered>section:nth-child(2)>a:nth-child(4){
+#openFooterCentered>section:nth-child(2)>a:nth-child(4){
 	top:66px;
 	left:65px;
 }
-#openFotterCentered>section:nth-child(2)>a:nth-child(5){
+#openFooterCentered>section:nth-child(2)>a:nth-child(5){
 	top:66px;
 	left:159px;
 }
-#openFotterCentered>section:nth-child(2)>a:nth-child(6){
+#openFooterCentered>section:nth-child(2)>a:nth-child(6){
 	top:87px;
 	left:66px;
 }
-#openFotterCentered>section:nth-child(2)>a:nth-child(7){
+#openFooterCentered>section:nth-child(2)>a:nth-child(7){
 	top:87px;
 	left:159px;
 }
