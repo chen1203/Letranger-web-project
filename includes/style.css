@@ -478,20 +478,22 @@ footer>section>a:nth-child(5) {
 	margin-top: 11px;
 }
 
+/* **************************** Category Page ********************************/
+
 /* Catagory nav */
 
-#catagory_nav {
+#left_nav {
 	width: 297px;
 	float: left;
 }
-#catagory_nav>h1{
+#left_nav>h1{
 	/* background 3 images */
 	color: #FFFFFF;
 	font-family: arial;
 	font-size: 16px;
 	height: 27px; 
 }
-#outer_menu,#catagory_nav>h1{
+#outer_menu,#left_nav>h1{
 	margin-left: 46px;
 }
 #inner_menu a,#outer_menu>li>a {
@@ -506,9 +508,9 @@ footer>section>a:nth-child(5) {
 	font-size: 16px;
 }
 
-/* main 12 pictures in catagory page */
+/* main in catagory page and designer page */
 
-#products_area{
+#products_area{ 
 	float: left;
 	width: 708px;
 }
@@ -544,4 +546,15 @@ footer>section>a:nth-child(5) {
 	font-size: 11px;
 	text-align: left;
 	line-height: 15px;	
+}
+
+
+
+/* **************************** Designers Page ********************************/
+
+#designer_name_title{
+	
+}
+#designer_desc{
+	
 }
