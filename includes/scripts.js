@@ -80,6 +80,10 @@ scroll.init();
 
 
 
+/* **************************** CATAGORY PAGE ************************************ */
+$(document).ready(function () { 
+//	$('#inner_menu').firstchild().addClass('selected');    
+});
 
 /*
  *  function to set the footer to bottom of the page while considering the screen size

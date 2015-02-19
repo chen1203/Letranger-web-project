@@ -8,25 +8,22 @@
 header,main,footer, nav, section, article, aside,body {
 	display: block;	
 }
-#wrapper {
+#hp>#wrapper,#textual_pages>#wrapper {
 	width : 1005px;	
 	margin: 282px auto 0px auto;
 }
 #wrapper>main { 	/* for spacing in small laptop */ 
-	margin-bottom: 40px;
+	margin-bottom: 80px;
 }
-/*
-#about>#wrapper>main,#hp>#wrapper>main {
-	min-height: 342px;
+.selected{
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 26px;
+	text-decoration: none;
 }
-#articles>#wrapper>main {
-	min-height: 407px;
-}
-*/
-
 
 /*----------------------- main menu ----------------------- */
-header {
+#hp header,#textual_pages header {
 	height: 146px;
 }
 header>nav {
@@ -464,4 +461,87 @@ footer>section>a:nth-child(5) {
 	font-family: Arial;
 	font-size: 12px;
 	color: #FFFFFF;
+}
+/* **************************** otherPages ********************************/
+#otherPages{
+	background: #000000 url(../images/nav_bg.jpg) repeat-x top;
+}
+#otherPages> #wrapper{
+	width : 1005px;	
+	margin: 0px auto;
+}
+#otherPages header {
+	height: 169px;
+}
+#top_nav{
+	height: 28px;
+	margin-top: 11px;
+}
+
+/* Catagory nav */
+
+#catagory_nav {
+	width: 297px;
+	float: left;
+}
+#catagory_nav>h1{
+	/* background 3 images */
+	color: #FFFFFF;
+	font-family: arial;
+	font-size: 16px;
+	height: 27px; 
+}
+#outer_menu,#catagory_nav>h1{
+	margin-left: 46px;
+}
+#inner_menu a,#outer_menu>li>a {
+	color: #B0B0B0;
+	font-family: arial;
+	text-decoration: none;
+}
+#inner_menu a {
+	font-size: 12px;
+} 
+#outer_menu>li>a {
+	font-size: 16px;
+}
+
+/* main 12 pictures in catagory page */
+
+#products_area{
+	float: left;
+	width: 708px;
+}
+#products_area>article{
+	background: url(../images/Catagory/main_seperate_line.jpg) top,
+						url(../images/Catagory/main_headline.jpg),
+						url(../images/Catagory/main_seperate_line.jpg) bottom;
+	background-repeat: no-repeat;
+	width: 666px;
+	height: 25px;	
+}
+#products_area h2{
+	color: #FFFFFF;
+	font-family: arial;
+	font-size: 12px;
+	padding: 5px 0px 0px 10px;
+}
+.product{
+	display: block;
+	float: left;
+	width: 165px;
+	height: 270px;
+	margin-right: 2px;
+}
+.product>img{
+	width: 165px;
+	height: 224px;
+	outline: none;
+}
+.product>p{
+	color: #FFFFFF;
+	font-family: arial;
+	font-size: 11px;
+	text-align: left;
+	line-height: 15px;	
 }
