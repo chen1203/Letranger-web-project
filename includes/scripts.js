@@ -1,20 +1,6 @@
-/*
- *  function to set the footer to bottom of the page while considering the screen size
- */
-
-/*$(document).ready(function() {
-		//var currentId = $('body').attr('id');
-	  // if (currentId != "articles"){	
-			var docHeight = $(window).height();
-			var footerHeight = $('footer').height();
-			var footerTop = $('footer').position().top + footerHeight;
-			if (footerTop < docHeight) {
-			    		$('footer').css('margin-top',(docHeight - footerTop) + 'px');
-	   		//}
-   }
-});*/
 
 /*Fixed footer start*/
+
 function positionFooter() { 
 	var mFoo = $("footer"); 
 	if ((($(document.body).height() + mFoo.outerHeight()) < $(window).height() && mFoo.css("position") == "fixed") 
@@ -25,7 +11,8 @@ function positionFooter() {
 
 $(document).ready(function () { 
 	positionFooter(); $(window).scroll(positionFooter); 
-	$(window).resize(positionFooter); $(window).load(positionFooter); });
+	$(window).resize(positionFooter); $(window).load(positionFooter); });
+
 /*Fixed footer end*/
 
 
@@ -56,7 +43,7 @@ $(window).resize(function(){
 
 
 
-/*Background scrolling start*/
+/*Background scrolling pictures start*/
 
 var BackgroundScroll = function(params) {
 	params = $.extend({
@@ -90,3 +77,22 @@ var BackgroundScroll = function(params) {
 var scroll = new BackgroundScroll();
 scroll.init();
 /*Background scrolling end*/
+
+
+
+
+/*
+ *  function to set the footer to bottom of the page while considering the screen size
+ */
+
+/*$(document).ready(function() {
+		//var currentId = $('body').attr('id');
+	  // if (currentId != "articles"){	
+			var docHeight = $(window).height();
+			var footerHeight = $('footer').height();
+			var footerTop = $('footer').position().top + footerHeight;
+			if (footerTop < docHeight) {
+			    		$('footer').css('margin-top',(docHeight - footerTop) + 'px');
+	   		//}
+   }
+});*/;
