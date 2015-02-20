@@ -80,30 +80,7 @@ $(document).ready(function () {
 
 /* **************************** DESIGNERS PAGE ************************************ */
 
-//option 2:
-var designerDescription, designerName;
-function getDesignerName() {
-	var aKeyValue = window.location.search.substring(1).split("&");
-	var designerName = aKeyValue[0].split("=")[1];
-	console.log("in function getDesignerName-> designerName: "+designerName);
-	return designerName;
-};
 
-$.getJSON("includes/designers.json",function(data){
-	var designerName = getDesignerName();//get data by url params
-	$.each(data.designers, function(key, value) {
-	    if (value.id == designerName) {
-	    	console.log("designerName: "+value.name);
-			console.log("designerDescription: "+value.description);
-	        designerName = value.name;
-            designerDescription = value.description;
-	    }
-	});
-	//console.log("designerName: "+designerName);
-	//console.log("designerDescription: "+designerDescription);
-	$("#designer_name_title").html(designerName);
-	$("#designer_desc").html(designerDescription);
-});
 
 
 
