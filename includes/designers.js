@@ -17,6 +17,6 @@ $.getJSON("includes/designers.json",function(data){
             designerDescription = value.description;
 	    }
 	});
-	$("#designer_name_title > p").html(designerName);
-	$("#designer_desc").html(designerDescription);
+	$("#designer_name_title").html(designerName);
+	$("#designer_desc>p").html(designerDescription);
 });
