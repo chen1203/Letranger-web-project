@@ -22,23 +22,15 @@ $(document).ready(function () {
 /*open footer start*/
 
 $(document).ready(function(){
+	
 	$(".btn-slide").click(function(){
+		
 		$("#openFooter").slideToggle("slow");
-		//$("html, body").animate({ scrollTop: $(document).height() }, "slow");
 		$("#login_logout-slide").toggleClass("activeLoginLogout"); 
 		$("#online_shop-slide").toggleClass("activeOnlineShop"); return false;
 	});
-	var postionFotter = $( "footer" );
-	var position = postionFotter.position();
-	$("#openFooter").css({ "top": position.top-122,"left":position.left});
 });
 
-
-$(window).resize(function(){
-  	var postionFotter = $( "footer" );
-	var position = postionFotter.position();
-	$("#openFooter").css({ "top": position.top-122,"left":position.left});
-});
 /*open footer end*/
 
 
@@ -85,6 +77,58 @@ $(document).ready(function () {
 //	$('#inner_menu').firstchild().addClass('selected');    
 });
 
+
+/* **************************** DESIGNERS PAGE ************************************ */
+
+/*
+//for all:
+$(document).ready(function(){
+    $.getJSON("includes/designers.json",function(data){
+            //	$('#designer_name_title').html(data.name);
+            //	$('#dataServices').append("<ul>");
+       			
+       			$.each(data.platform, function () {
+            			//console.log(this.id);
+            			//$('#dataServices').append("<li><a href='book.html?bookId=" + this.id + "'>" + this.type + "</a></li>");
+            			//for one page logic: 
+            			$('#dataServices').append("<li><a href='#' onclick='prompBook(bookId=" + this.id + ")'>" + this.type + "</a></li>");
+       			});
+            	$('#dataServices').append("</ul>");
+            	//console.log($('#dataServices').html());
+    });
+});
+
+$(document).ready(function(){
+    $.getJSON("includes/designers.json",function(data){
+      //var sHTML = "<ul>";      
+      
+      $.each(data, function(key, val){
+		  console.log(val);
+		   $.each(val, function(key2, val2){
+			  //	sHTML += "key + "</b>:" + val.name + "</li>";
+			  console.log(key2+" -- "+val2.name);
+			});
+	  });		
+		
+		
+		//sHTML += "</ul>";
+		//console.log("sHTML: "+sHTML);
+		//$('#dataServices').append(sHTML);        
+    });
+});
+
+
+
+*/
+
+
+
+
+
+
+
+
+
 /*
  *  function to set the footer to bottom of the page while considering the screen size
  */
@@ -100,3 +144,14 @@ $(document).ready(function () {
 	   		//}
    }
 });*/;
+
+
+/* footer up and down from Yonit */
+	
+//	var postionFotter = $( "#openFooter" );
+//	var position = postionFotter.position();
+//$("#openFooter").css({ "bottom": position.bottom-28,"left":position.left});
+//	var bottom = $(window).height() - 150;
+//	console.log("%%%%%%%%%%   bottom: "+position.botom+" left: "+ position.left+" bottom : "+bottom);
+//	$("#openFooter").css({ "bottom": 28,"left":position.left});
+
