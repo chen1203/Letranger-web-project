@@ -489,11 +489,6 @@ footer>section>a:nth-child(5) {
 	float: left;
 	margin-left: 45px;
 }
-/*
-#outer_menu,#left_nav>article {
-	margin-left: 46px;
-}
-*/
 #left_nav>article{
 	background: url(../images/Catagory/nav_seperate_line.png) top,
 						url(../images/Catagory/nav_seperate_line.png) bottom;
@@ -505,10 +500,13 @@ footer>section>a:nth-child(5) {
 	color: #FFFFFF;
 	font-family: arial;
 	font-size: 16px;
-	padding-top: 5px;
+	padding-top: 6px;
 }
-#outer_menu,#outer_menu>li{
+#outer_menu>li{
 	padding-top: 10px;
+}
+#outer_menu{
+	padding-top: 25px;
 }
 #inner_menu>li{
 	padding-top: 5px;
@@ -538,13 +536,13 @@ footer>section>a:nth-child(5) {
 	float: left;
 	width: 708px;
 }
-#products_area>article{
+#products_area>article:first-child{
 	background: url(../images/Catagory/main_seperate_line.jpg) top,
-						url(../images/Catagory/main_headline.jpg),
+						url(../images/Catagory/main_headline.jpg) 0px 1px,
 						url(../images/Catagory/main_seperate_line.jpg) bottom;
 	background-repeat: no-repeat;
 	width: 666px;
-	height: 25px;	
+	height: 27px;	
 }
 #products_area h2{
 	color: #FFFFFF;
@@ -577,8 +575,27 @@ footer>section>a:nth-child(5) {
 /* **************************** Designers Page ********************************/
 
 #designer_name_title{
-	
+	font-size: 12px;
+	font-family: arial;
+	color: #FFFFFF;
 }
 #designer_desc{
+	height: 79px;
+	width: 666px;
+	border: 1px solid red;
+}
+#designer_desc>p{
+	font-size: 12px;
+	font-family: arial;
+	color: #808080;
+}
+#designer_pics{
 	
+}
+#designer_pics img{
+	height: 500px;
+	width: 334px;
+	outline: none;
+	display: block; /* delete */
+	margin: auto; /* delete */
 }
