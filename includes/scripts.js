@@ -1,4 +1,3 @@
-
 /*Fixed footer start*/
 
 function positionFooter() { 

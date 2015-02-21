@@ -2,9 +2,9 @@ $(document).ready(function () {
 
 function getDesignerName() {
 	var aKeyValue = window.location.search.substring(1).split("&");
-	var designerName = aKeyValue[0].split("=")[1];
-	designerName = designerName.replace(/%[0-9]+/g," ");
-	console.log(designerName);
+	var designer = aKeyValue[0].split("=")[1];
+	designerName = designer.replace(/%[0-9]+/g," ");
+	desNameWithSep = designer.replace(/%[0-9]+/g,"_");
 	return designerName;
 };
 
@@ -31,15 +31,21 @@ function getDesignerName() {
 $.getJSON("includes/designers.json",function(data){
 	var designerDescription, designerName, designerPics;
 	var name = getDesignerName();//get data by url params
+	
+
 	$.each(data.designers, function(key, value) {
 	    if (value.name == name) {
 	        designerName = value.name;
+	        console.log(designerName);
+	        
             designerDescription = value.description;
             designerPics=value.pics;
             console.log("designerPics: "+designerPics);
+            
+            $('#'+desNameWithSep+'').addClass("selected_designer");
 	    }
 	});
-	$("#designer_name_title").prepend(designerName +" \\ mens suits");
+	$("#designer_name_title").prepend(designerName +" &nbsp;\\&nbsp; mens suits");
 	$("#designer_desc>p").html(designerDescription);
 		$.each( designerPics, function( i, pic ) {
 			picI = "images/designers/"+designerName+"/"+pic+".jpg";
@@ -47,4 +53,6 @@ $.getJSON("includes/designers.json",function(data){
 		});
 		var jssor_slider1 = new $JssorSlider$("slider1_container", options);
 	});
+	
+	
 });
