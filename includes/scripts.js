@@ -80,8 +80,76 @@ $(document).ready(function () {
 
 /* **************************** DESIGNERS PAGE ************************************ */
 
+$(document).ready(function () { 
 
 
+
+
+    $("#button-next").click(function(){
+
+		    $('.active').removeClass('active').addClass('oldActive');    
+	        if ( $('.oldActive').next().is(':last-child')) {
+	        		$('.sp').first().addClass('active');
+	         }
+	        else{
+	       			$('.oldActive').next().next().addClass('active');
+	        }
+	    	$('.oldActive').removeClass('oldActive');
+
+
+			$('.active2').removeClass('active2').addClass('oldActive2');    
+		     if ( $('.oldActive2').is(':last-child')) {
+	        		$('.sp2').first().addClass('active2');
+	         }
+	        else{
+	       			$('.oldActive2').next().next().addClass('active2');
+	        }
+	    	$('.oldActive2').removeClass('oldActive2');
+		    
+		    $('.sp').fadeOut();
+		    $('.sp2').fadeOut();
+		    $('.active').fadeIn();
+		    $('.active2').fadeIn();
+		    
+		    pensionKeren = $('.sp.active').attr('id').toString() ;
+		    $('.column').removeClass('activeCol');
+			$('#'+pensionKeren+'Col').addClass('activeCol');
+		    
+    });
+    
+       $('#button-previous').click(function(){
+		//	alert(pensionKeren+"  "+$('.sp.active').attr('id'));
+			
+		    $('.active').removeClass('active').addClass('oldActive');    
+		     if ( $('.oldActive').is(':first-child')) {
+		      	   $('.sp').last().addClass('active');
+		     }
+		     else{
+		    		$('.oldActive').prev().prev().addClass('active');
+		     }
+		    $('.oldActive').removeClass('oldActive');
+		    
+		    
+		     $('.active2').removeClass('active2').addClass('oldActive2');    
+		     if ( $('.oldActive2').prev().is(':first-child')) {
+		      	   $('.sp2').last().addClass('active2');
+		     }
+		     else{
+		    		$('.oldActive2').prev().prev().addClass('active2');
+		     }
+		    $('.oldActive2').removeClass('oldActive2');
+		    
+		    $('.sp').fadeOut();
+		    $('.sp2').fadeOut();
+		    $('.active').fadeIn();
+		    $('.active2').fadeIn();
+		    
+		      pensionKeren = $('.sp.active').attr('id').toString() ;
+		      $('.column').removeClass('activeCol');
+			  $('#'+pensionKeren+'Col').addClass('activeCol');
+    });
+
+});
 
 
 

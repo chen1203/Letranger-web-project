@@ -582,20 +582,59 @@ footer>section>a:nth-child(5) {
 #designer_desc{
 	height: 79px;
 	width: 666px;
-	border: 1px solid red;
 }
 #designer_desc>p{
 	font-size: 12px;
 	font-family: arial;
 	color: #808080;
+	line-height: 20px;
+	margin-top: 15px;
 }
 #designer_pics{
-	
-}
-#designer_pics img{
+	width: 666px;
 	height: 500px;
-	width: 334px;
+	position: relative;
+}
+#designer_pics>img{ /* left & right buttons */
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	display: block;
+	top: 200px;
+	z-index: 2;
+}
+#designer_pics>img:nth-child(1){ /* button-previous */
+	left: 165px;
+}
+#designer_pics>img:nth-child(2){ /* button-next */
+	left: 468px;
+}
+
+/*
+ #designer_pics img{
+	height: 500px;
+	width: 334px; 
 	outline: none;
-	display: block; /* delete */
-	margin: auto; /* delete */
+}
+ */
+#designer_pics>section{
+	position: absolute;
+	background-repeat: no-repeat;
+	height: 500px;
+}
+#mainPic{
+	width: 334px;
+	top: 0px;
+	left: 166px;
+}
+#rightPic,#leftPic{
+	width: 164px;
+	top: 0px;
+}
+#rightPic{
+	left: 502px;
+}
+#leftPic{
+	left: 0px;
+	background-position: right;
 }
