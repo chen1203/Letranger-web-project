@@ -193,6 +193,7 @@ footer>section>a:nth-child(5) {
 	margin-right: 55px;
 	width: 189px;
 	height: 15px;
+	color:#FFFFFF;
 }
 .inputsLogin:focus{
 	outline: none;
@@ -216,23 +217,31 @@ footer>section>a:nth-child(5) {
 #loginLogout>a:nth-child(4){
 	right: 54px;
 }
-#loginLogout>a:nth-child(5),#loginLogout>a:nth-child(6){
+#loginLogout>input:nth-child(5),#loginLogout>input:nth-child(6){
 	font-size: 14px;
 	font-family: Arial;
 	color:#ffffff;
-	text-decoration: none;
 	bottom:13px;
 	width: 54px;
 	height:18px;
 	text-align: center;
-}
-#loginLogout>a:nth-child(5){
-	left:202px;
-	background: url(../images/form_buttons.jpg) no-repeat;	
-}
-#loginLogout>a:nth-child(6){
-	right:57px;
+	position: absolute;
 	background: url(../images/form_buttons.jpg) no-repeat;
+	border:none;
+	text-shadow:0px -1px 1px #222222;
+}
+#loginLogout>input:nth-child(5):focus,#loginLogout>input:nth-child(6):focus{
+    outline: 0;
+}
+#loginLogout>input:nth-child(5):hover,#loginLogout>input:nth-child(6):hover{
+	text-shadow: 0px 0px 6px rgba(255,255,255,1);		/* glory */
+	font-size: 14px;
+}
+#loginLogout>input:nth-child(5){
+	left:202px;	
+}
+#loginLogout>input:nth-child(6){
+	right:57px;
 }
 #openFooterCentered>section:nth-child(2){
 	width:619px;
@@ -243,18 +252,17 @@ footer>section>a:nth-child(5) {
 #openFooterCentered>section:nth-child(2)>a{
 	text-decoration: none;
 	position: absolute;
-}
-#openFooterCentered>section:nth-child(2)>a:not(:first-child){
 	color: #b0b0b0;
 	font-size: 12px;
 	font-family: Arial;
 }
-#openFooterCentered>section:nth-child(2)>a:nth-child(1){
+#openFooterCentered>section:nth-child(2)>h2{
 	font-size: 14px;
 	font-family: Arial; /* NEED TO CHANGE TO DIFERENT FONT*/
 	color:#ffffff;
 	top:13px;
 	left:65px;
+	position: absolute;
 }
 #openFooterCentered>section:nth-child(2)>a:nth-child(2){
 	top:45px;
