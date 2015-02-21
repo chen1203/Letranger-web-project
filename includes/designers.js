@@ -39,7 +39,7 @@ $.getJSON("includes/designers.json",function(data){
             console.log("designerPics: "+designerPics);
 	    }
 	});
-	$("#designer_name_title").prepend(designerName +"");
+	$("#designer_name_title").prepend(designerName +" \\ mens suits");
 	$("#designer_desc>p").html(designerDescription);
 		$.each( designerPics, function( i, pic ) {
 			picI = "images/designers/"+designerName+"/"+pic+".jpg";
