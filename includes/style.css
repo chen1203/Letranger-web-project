@@ -483,6 +483,7 @@ footer>section>a:nth-child(5) {
 }
 #otherPages header {
 	height: 169px;
+	position: relative;
 }
 #top_nav{
 	height: 28px;
