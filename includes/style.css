@@ -16,6 +16,7 @@ header,main,footer, nav, section, article, aside,body {
 	margin-bottom: 80px;
 }
 
+
 /*----------------------- main menu ----------------------- */
 #hp header,#textual_pages header {
 	height: 146px;
@@ -124,17 +125,22 @@ footer>section>a:nth-child(1) {
 	font-size: 13px;
 	left: 42px;
 }
-footer>section>a:nth-child(2) {
+/*footer>section>a:nth-child(2) { */
+#login_logout-slide{
 	font-size: 13px;
 	left: 91px;
 	width: 54px;
-	background: url(../images/footer_up_arrow.png) no-repeat right 4px;		
+	background-image: url(../images/footer_up_arrow.png); 
+	background-repeat: no-repeat ;
+	background-position: right 4px;		
 }
 footer>section>a:nth-child(3) {
 	font-size: 14px;
 	left: 446px;
 	width: 125px;
-	background: url(../images/footer_up_arrow.png) no-repeat 103px 5px;	
+	background-image: url(../images/footer_up_arrow.png) ;
+	background-repeat: no-repeat ;
+	background-position:  103px 5px;	
 }
 footer>section>a:nth-child(4) {
 	font-size: 12px;
@@ -284,10 +290,10 @@ footer>section>a:nth-child(5) {
 	left:159px;
 }
 .activeOnlineShop{
-	background: url(../images/down_arrow.png) no-repeat 103px 5px !important;
+/*	background: url(../images/down_arrow.png) no-repeat 103px 5px !important; */ 
 }
 .activeLoginLogout{
-	background: url(../images/down_arrow.png) no-repeat right 4px !important;	
+/*	background: url(../images/down_arrow.png) no-repeat right 4px !important; */	
 }
 /* --------------------------------------------------- Home page --------------------------------------------------- */
 
@@ -415,9 +421,13 @@ footer>section>a:nth-child(5) {
 	font-family: Arial;
 	font-size: 13px;
 }
-#articles_types>li:first-child>a {
+.selected{
 	color: #FFFFFF;
-}
+	font-weight: bold;
+} 
+/*#articles_types>li:first-child>a {
+	color: #FFFFFF;
+} */
 #all_articles{
 	height : 342px;
 }

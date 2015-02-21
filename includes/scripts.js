@@ -10,11 +10,9 @@ function positionFooter() {
 
 $(document).ready(function () { 
 	positionFooter(); $(window).scroll(positionFooter); 
-	$(window).resize(positionFooter); $(window).load(positionFooter); });
-
+	$(window).resize(positionFooter); $(window).load(positionFooter); 
+});
 /*Fixed footer end*/
-
-
 
 
 
@@ -23,10 +21,22 @@ $(document).ready(function () {
 $(document).ready(function(){
 	
 	$(".btn-slide").click(function(){
-		
+			
 		$("#openFooter").slideToggle("slow");
-		$("#login_logout-slide").toggleClass("activeLoginLogout"); 
-		$("#online_shop-slide").toggleClass("activeOnlineShop"); return false;
+//		$("#login_logout-slide").toggleClass("activeLoginLogout"); 
+//		$("#online_shop-slide").toggleClass("activeOnlineShop"); 
+		
+		if ($("#login_logout-slide").hasClass("closedFooter")) {
+			$("#login_logout-slide").css("background-image","url(images/down_arrow.png)");
+			$("#online_shop-slide").css("background-image","url(images/down_arrow.png)");
+			$("#login_logout-slide").removeClass("closedFooter");
+		} else {
+			$("#login_logout-slide").css("background-image","url(images/footer_up_arrow.png)");
+			$("#online_shop-slide").css("background-image","url(images/footer_up_arrow.png)");
+			$("#login_logout-slide").addClass("closedFooter");
+		}
+	//	return false;
+		
 	});
 });
 
@@ -36,7 +46,6 @@ $(document).ready(function(){
 
 /*Background scrolling pictures start*/
 
-/*
 var BackgroundScroll = function(params) {
 	params = $.extend({
 		scrollSpeed: 20,
@@ -67,7 +76,7 @@ var BackgroundScroll = function(params) {
 };
 
 var scroll = new BackgroundScroll();
-scroll.init();*/
+scroll.init();
 
 /*Background scrolling end*/
 
@@ -75,8 +84,16 @@ scroll.init();*/
 
 /* **************************** CATAGORY PAGE ************************************ */
 $(document).ready(function () { 
-	
-//	$('#inner_menu>li:first-child').addClass('selected_jackets');    
+	$('#articles_types>li:first-child>a').addClass('selected');
+//	$('#inner_menu>li:first-child').addClass('selected_jackets');
+
+	$("#articles_types li").click(function() {
+    	//this.id = 'newId';
+
+    	// longer method using .attr()
+    	$(this).addClass('selected');
+	});
+    
 });
 
 
