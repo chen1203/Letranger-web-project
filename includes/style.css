@@ -25,6 +25,7 @@ header,main,footer, nav, section, article, aside,body {
 /*----------------------- main menu ----------------------- */
 #hp header,#textual_pages header {
 	height: 146px;
+	position: relative;
 }
 header>nav {
 	height: 28px;
@@ -56,16 +57,16 @@ header>nav {
 	font-size: 14px;
 }
 #logo {
-	display: block;
-	text-align: center;
 	padding: 49px 0px 35px 0px;
 	font-family: Lato, Arial, Helvetica, sans-serif;
 	color: #FFFFFF;
 	font-size: 28px;
 	font-weight: normal;
 	text-decoration: none;
+	position:absolute;
+	left: 420px;
+	top:28px;
 }
-
 /*----------------------- static aside ----------------------- */
 /* fixed links to facebook and contact us */ 
 aside {
