@@ -1,4 +1,6 @@
-@import url(http://fonts.googleapis.com/css?family=Lato);
+/* @import url(http://fonts.googleapis.com/css?family=Lato);
+*/
+
 
 /* --------------------------------------------------- All pages --------------------------------------------------- */
 * {
@@ -512,18 +514,18 @@ footer>section>a:nth-child(5) {
 	font-size: 16px;
 	padding-top: 6px;
 }
-#outer_menu>li{
-	padding-top: 10px;
-}
 #outer_menu{
 	padding-top: 25px;
+}
+#outer_menu>li{
+	padding-top: 10px;
 }
 #inner_menu>li{
 	padding-top: 5px;
 	padding-left: 14px;
 }
 #outer_menu>li:first-child>a{
-	background: url(../images/Catagory/selected_bg.png) no-repeat;
+	background: url(../images/Catagory/selected_bg.png) no-repeat 0px 1px;
 }
 #inner_menu a,#outer_menu>li>a {
 	display: block;
@@ -536,8 +538,8 @@ footer>section>a:nth-child(5) {
 	font-size: 12px;
 } 
 #outer_menu>li>a {
-	font-size: 14px; /* 16? */
-	padding-left: 5px;
+	font-size: 11px; /* 16? */
+	padding-left: 4px;
 }
 
 /* main in catagory page and designer page */
@@ -600,51 +602,5 @@ footer>section>a:nth-child(5) {
 	line-height: 20px;
 	margin-top: 15px;
 }
-#designer_pics{
-	width: 666px;
-	height: 500px;
-	position: relative;
-}
-#designer_pics>img{ /* left & right buttons */
-	width: 32px;
-	height: 32px;
-	position: absolute;
-	display: block;
-	top: 200px;
-	z-index: 2;
-}
-#designer_pics>img:nth-child(1){ /* button-previous */
-	left: 165px;
-}
-#designer_pics>img:nth-child(2){ /* button-next */
-	left: 468px;
-}
 
-/*
- #designer_pics img{
-	height: 500px;
-	width: 334px; 
-	outline: none;
-}
- */
-#designer_pics>section{
-	position: absolute;
-	background-repeat: no-repeat;
-	height: 500px;
-}
-#mainPic{
-	width: 334px;
-	top: 0px;
-	left: 166px;
-}
-#rightPic,#leftPic{
-	width: 164px;
-	top: 0px;
-}
-#rightPic{
-	left: 502px;
-}
-#leftPic{
-	left: 0px;
-	background-position: right;
-}
+

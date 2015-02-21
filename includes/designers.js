@@ -1,3 +1,5 @@
+$(document).ready(function () { 
+
 function getDesignerName() {
 	var aKeyValue = window.location.search.substring(1).split("&");
 	var designerName = aKeyValue[0].split("=")[1];
@@ -5,6 +7,26 @@ function getDesignerName() {
 	console.log(designerName);
 	return designerName;
 };
+
+ var options = {
+                $AutoPlay: true,
+
+                $PauseOnHover: 1,                               //[Optional] Whether to pause when mouse over if a slideshow is auto playing, default value is false
+
+                $ArrowKeyNavigation: true,   			            //Allows arrow key to navigate or not
+                $SlideWidth: 334,                                   //[Optional] Width of every slide in pixels, the default is width of 'slides' container
+                $SlideHeight: 500,                                  //[Optional] Height of every slide in pixels, the default is width of 'slides' container
+                $SlideSpacing: 2, 					                //Space between each slide in pixels
+                $DisplayPieces: 2,                                  //Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+                $ParkingPosition: 166,                                //The offset position to park slide (this options applys only when slideshow disabled).
+
+                $ArrowNavigatorOptions: {                       //[Optional] Options to specify and enable arrow navigator or not
+                    $Class: $JssorArrowNavigator$,              //[Requried] Class to create arrow navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 2,                                 //[Optional] Auto center arrows in parent container, 0 No, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1                                       //[Optional] Steps to go for each navigation request, default value is 1
+                }
+            };
 
 $.getJSON("includes/designers.json",function(data){
 	var designerDescription, designerName, designerPics;
@@ -19,26 +41,10 @@ $.getJSON("includes/designers.json",function(data){
 	});
 	$("#designer_name_title").prepend(designerName +"");
 	$("#designer_desc>p").html(designerDescription);
-	
-//	$.each( designerPics, function( i, pic ) {
-//			$("#leftPic").append("<img src='images/designers/"+designerName+"/"+pic+".jpg'>");
-
-	$('#leftPic').css('background-image','url("images/designers/'+designerName+'/'+designerPics[0]+'.jpg")');
-	$('#mainPic').css('background-image','url("images/designers/'+designerName+'/'+designerPics[1]+'.jpg")');
-	$('#rightPic').css('background-image','url("images/designers/'+designerName+'/'+designerPics[2]+'.jpg")');
-
-	//	"<img src='images/designers/"+designerName+"/"+designerPics[0]+".jpg'>");
-//	$("#mainPic").append("<img src='images/designers/"+designerName+"/"+designerPics[1]+".jpg'>");
-//	$("#rightPic").append("<img src='images/designers/"+designerName+"/"+designerPics[2]+".jpg'>");		
-//	console.log("child: "+i+"  "+designerName+"/"+pic+".jpg");
-//	  });
-	  
+		$.each( designerPics, function( i, pic ) {
+			picI = "images/designers/"+designerName+"/"+pic+".jpg";
+			$('#designer_pics').append("<div> <img u=image src='"+picI+"'> </div> ");
+		});
+		var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+	});
 });
-
-
-
-
-//	var picPath = "images/designers/"+designerName+"/"+designerPics[0]+".jpg";
-//	console.log(picPath);
-	
-//	$('#mainPic').css('background-image','url("' + picPath + '")');

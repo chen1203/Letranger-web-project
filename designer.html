@@ -3,7 +3,9 @@
 	<head>
 			<meta charset="UTF-8">
 			<link rel="stylesheet" href="includes/style.css">
+			<link rel="stylesheet" href="includes/gallery.css">
 			<script src="includes/jquery-1.11.1.min.js"></script>
+			<script type="text/javascript" src="includes/jssor.slider.mini.js"></script> 
 			<script src="includes/designers.js"></script>
 			<script src="includes/scripts.js"></script>
 			<title> Designer </title>
@@ -26,31 +28,33 @@
 				<nav id="left_nav">
 					<article> <h1> DESINGERS </h1> </article>
 					<ul id="outer_menu">
-						<li> <a href="#"> WOMENSWEAR </a> </li>
-						<li> <a href="#"> ACCESSORIES </a> </li>
-						<li> <a href="#"> UNDERWEAR </a> </li>
-						<li> <a href="#"> MENSWEAR SALE </a> </li>
-						<li> <a href="#"> WOMENSWEAR SALE </a> </li>
-						<li> <a href="#"> WOMENSWEAR </a> </li>
-						<li> <a href="#"> ACCESSORIES </a> </li>
-						<li> <a href="#"> UNDERWEAR </a> </li>
-						<li> <a href="#"> MENSWEAR SALE </a> </li>
-						<li> <a href="#"> WOMENSWEAR SALE </a> </li>
+						<li> <a href="#"> PEACHOO + KREJBERG </a> </li>
+						<li> <a href="#"> RING </a> </li>
+						<li> <a href="#"> GIULIANO FUJIWARA</a> </li>
+						<li> <a href="#"> FORTE FORTE</a> </li>
+						<li> <a href="#"> DRKSHDW </a> </li>
+						<li> <a href="#"> LABEL UNDER CONSTRUCTION</a> </li>
+						<li> <a href="#"> GOTI </a> </li>
+						<li> <a href="#"> CLAUDE MAUS </a> </li>
+						<li> <a href="#"> CORNELIAN BY DAISUKE IWANAGA </a> </li>
+						<li> <a href="#"> MARSELL </a> </li>
+						<li> <a href="#"> ILARIA NISTRI </a> </li>
+						<li> <a href="#"> RICK OWENS </a> </li>
+						<li> <a href="#"> GIULIANO FUJIWARA </a> </li>
 					</ul>	
 				</nav>
 				<main id="products_area">
 					<article> <h2 id="designer_name_title"> <!-- dynamic ?? --> \ mens suits </h2> </article>
 					<article id="designer_desc"> <p> </p> </article>
 					<!-- dynamic designer galary -->
-					<section id="designer_pics">
-							<img src="images/designers/button-previous.png">
-							<img src="images/designers/button-next.png">
-							<section id="leftPic"></section> 
-							<section id="mainPic"></section>
-							<section id="rightPic"></section>
-					</section>
+					<div id="slider1_container">
+        			<!-- Slides Container -->
+        				<div id="designer_pics" u="slides">
+					    </div>
+					    <span u="arrowleft" class="jssora13l" style="width: 40px; height: 50px; top: 123px; left: 166px;"> </span>
+   		   				<span u="arrowright" class="jssora13r" style="width: 40px; height: 50px; top: 123px; right: 166px"> </span>
+					</div>
 				</main>
-		</div>
 		<aside>
 					<a href="#"> </a>
 					<a href="#"> <p> contact us </p> </a>
