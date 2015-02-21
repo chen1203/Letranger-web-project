@@ -17,12 +17,6 @@ header,main,footer, nav, section, article, aside,body {
 #wrapper>main { 	/* for spacing in small laptop */ 
 	margin-bottom: 80px;
 }
-.selected{
-	color: #FFFFFF;
-	font-weight: bold;
-	font-size: 26px;
-	text-decoration: none;
-}
 
 /*----------------------- main menu ----------------------- */
 #hp header,#textual_pages header {
@@ -482,6 +476,7 @@ footer>section>a:nth-child(5) {
 #otherPages> #wrapper{
 	width : 1005px;	
 	margin: 0px auto;
+	position: relative;
 }
 #otherPages header {
 	height: 169px;
@@ -496,10 +491,19 @@ footer>section>a:nth-child(5) {
 
 /* Catagory nav */
 
+#arrow_left_nav{
+	position: absolute;
+	top: 163px;
+	left: 0px;
+	background: url(../images/Catagory/big_arrow.png) no-repeat;
+	width: 31px;
+	height: 38px;
+}
 #left_nav { 
 	width: 252px; 	/* was 297 */
 	float: left;
 	margin-left: 45px;
+/*	background: url(../images/check/catagory_left_nav2.png) no-repeat; */
 }
 #left_nav>article{
 	background: url(../images/Catagory/nav_seperate_line.png) top,
@@ -515,17 +519,17 @@ footer>section>a:nth-child(5) {
 	padding-top: 6px;
 }
 #outer_menu{
-	padding-top: 25px;
+	padding-top: 13px;
 }
 #outer_menu>li{
-	padding-top: 10px;
-}
-#inner_menu>li{
-	padding-top: 5px;
-	padding-left: 14px;
+	padding-top: 7px;
 }
 #outer_menu>li:first-child>a{
 	background: url(../images/Catagory/selected_bg.png) no-repeat 0px 1px;
+}
+#outer_menu>li>a {
+	font-size: 11px; 
+	padding-left: 3px;
 }
 #inner_menu a,#outer_menu>li>a {
 	display: block;
@@ -534,12 +538,26 @@ footer>section>a:nth-child(5) {
 	text-decoration: none;
 	width: 252px;
 }
+#inner_menu{
+	padding-top: 13px;	
+}
+#inner_menu>li{
+	background-image: url(../images/Catagory/menu_arrow.png); 
+	background-repeat: no-repeat;
+	background-position: 3px 5px ;
+	padding-left: 15px;
+	height: 20px;
+	list-style: none;
+}
 #inner_menu a {
 	font-size: 12px;
-} 
-#outer_menu>li>a {
-	font-size: 11px; /* 16? */
-	padding-left: 4px;
+}
+#inner_menu>li:first-child{
+	font-weight: bold;
+	background-image: url(../images/Catagory/menu_arrow_selected.png);
+}  
+#inner_menu>li:first-child>a{	
+	color: #FFFFFF;	
 }
 
 /* main in catagory page and designer page */
@@ -581,7 +599,11 @@ footer>section>a:nth-child(5) {
 	text-align: left;
 	line-height: 15px;	
 }
-
+.selected_jackets{
+	color: #FFFFFF;
+	font-weight: bold;
+	background-image: url(../images/Catagory/menu_arrow_selected.png); 
+}
 
 
 /* **************************** Designers Page ********************************/

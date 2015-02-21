@@ -76,7 +76,8 @@ scroll.init();*/
 
 /* **************************** CATAGORY PAGE ************************************ */
 $(document).ready(function () { 
-//	$('#inner_menu').firstchild().addClass('selected');    
+	
+//	$('#inner_menu>li:first-child').addClass('selected_jackets');    
 });
 
 
