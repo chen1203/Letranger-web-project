@@ -535,7 +535,7 @@ footer>section>a:nth-child(5) {
 	padding-top: 7px;
 }
 /*#outer_menu>li:first-child>a{ */
-.selected_designer{
+.selected_designer,#outer_menu>li>a:hover{
 	background: url(../images/Catagory/selected_bg.png) no-repeat 0px 1px;
 }
 #outer_menu>li>a {
