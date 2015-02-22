@@ -68,10 +68,10 @@ $(document).ready(function () {
 //	$('#otherPages .wrapper').removeClass('wrap').removeClass('push');
 //	$('.left_nav').removeAttr('id');
 //	$('#products_area').removeClass('wrap').removeClass('push');
-	$('#products_area').css('float','left');
+/*	$('#products_area').css('float','left');
 	$('#arrow_left_nav').css('display','block');		
 	$('#hamburger').css('display','none');
-	
+
 	
 	$(window).resize(function(){
 		var widthS = $( window ).width();
@@ -101,6 +101,6 @@ $(document).ready(function () {
 		}
 		 		
 	  });
-	
+*/	
         
 });	

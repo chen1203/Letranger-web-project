@@ -5,16 +5,20 @@
 			<link rel="stylesheet" href="includes/style.css">
 			<link rel="stylesheet" href="includes/gallery.css">
 			<script src="includes/jquery-1.11.1.min.js"></script>
-			<script type="text/javascript" src="includes/jssor.slider.mini.js"></script>
-			<script src="includes/bigSlide.min.js"></script>  
+			<script type="text/javascript" src="includes/jssor.slider.mini.js"></script> 
 			<script src="includes/designers.js"></script>
 			<script src="includes/scripts.js"></script>
 			<title> Designer </title>
 	</head>
 	<body id="otherPages">
-		<div id="wrapper"> <!-- class="wrap push" -->
+		<div id="wrapper" class="mobile-nav">
+ 				<div class="menu-btn" id="menu-btn">
+ 						<div></div>
+						<span></span>
+						<span></span>
+						<span></span>
+ 				</div>	
 				<header>
-						<a id="hamburger" href="#menu2" class="menu-link" >&#9776;</a>  
 						<nav id="top_nav">
 							<ul class="top_menu">
 									<li> <a href="index.html"> HOME </a> </li>
@@ -24,12 +28,11 @@
 									<li> <a href="#"> SHOP INFO	</a> </li>
 							</ul>
 						</nav>
-						
 						<a id="logo" href="#"> L’ÉTRANGER </a> <!-- logo -->
 				</header>
 				<article id="arrow_left_nav"> </article> <!-- arrow -->
 				
-					<nav class="left_nav"> <!-- ID = left_nav -->
+					<nav id="left_nav" class="responsive-menu">
 						<article> <h1> DESINGERS </h1> </article>
 						<ul id="outer_menu">
 							<li> <a href="#"> PEACHOO + KREJBERG </a> </li>
@@ -47,7 +50,7 @@
 							<li> <a href="#"> GIULIANO FUJIWARA </a> </li>
 						</ul>	
 					</nav>
-				<main id="products_area"> <!-- class="wrap push" -->
+				<main id="products_area">
 					<article> <h2 id="designer_name_title"> <!-- dynamic name --> </h2> </article>
 					<article id="designer_desc"> <p> <!-- dynamic description -->  </p> </article>
 					<!-- dynamic designer galary -->

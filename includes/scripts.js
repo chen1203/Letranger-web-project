@@ -101,14 +101,17 @@ $(document).ready(function () {
 
 
 
-/*
+
 jQuery(function($){
     	     $( '.menu-btn' ).click(function(){
-    	    	 $('.responsive-menu').toggleClass('expand');
+    	    	 $('#left_nav').toggleClass('expand');
+    	    	 //$('#products_area').toggleClass('products_area_center');
+    	    	 
     	    	 //$('#arrow_left_nav').something..();
     	     });
 });
-*/
+
+
 
 
 /*
