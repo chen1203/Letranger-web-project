@@ -422,7 +422,11 @@ footer>section>a:nth-child(5) {
 	font-family: Arial;
 	font-size: 13px;
 }
-.selected{
+#articles_types>li>a:hover {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+#articles_types>li>.selected{
 	color: #FFFFFF;
 	font-weight: bold;
 } 
@@ -558,12 +562,19 @@ footer>section>a:nth-child(5) {
 #inner_menu a {
 	font-size: 12px;
 }
-#inner_menu>li:first-child{
+#inner_menu>li:hover{
+	background-image: url(../images/Catagory/menu_arrow_selected.png)
+}
+#inner_menu a:hover{
+	color: #FFFFFF;	
 	font-weight: bold;
+}
+#inner_menu>.selected{
 	background-image: url(../images/Catagory/menu_arrow_selected.png);
 }  
-#inner_menu>li:first-child>a{	
+#inner_menu>.selected>a{	
 	color: #FFFFFF;	
+	font-weight: bold;
 }
 
 /* main in catagory page and designer page */

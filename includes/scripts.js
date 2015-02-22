@@ -85,6 +85,7 @@ scroll.init();*/
 
 
 /* **************************** CATAGORY PAGE ************************************ */
+/*
 $(document).ready(function () { 
 	$('#articles_types>li:first-child>a').addClass('selected');
 //	$('#inner_menu>li:first-child').addClass('selected_jackets');
@@ -96,7 +97,8 @@ $(document).ready(function () {
     	$(this).addClass('selected');
 	});
     
-});
+});*/
+
 
 
 /* **************************** HAMBURGER ************************************ */
@@ -181,7 +183,6 @@ jQuery(function($){
 
 $( window ).resize(function() {
 	var sum=$(window).width()/3.1;
-	console.log(sum);
   	$("#logo").css("left",sum)
 });
 
