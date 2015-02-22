@@ -35,7 +35,7 @@ $(document).ready(function(){
 			$("#online_shop-slide").css("background-image","url(images/footer_up_arrow.png)");
 			$("#login_logout-slide").addClass("closedFooter");
 		}
-	//	return false;
+		return false;
 		
 	});
 });
@@ -97,10 +97,28 @@ $(document).ready(function () {
 });
 
 
-/* **************************** DESIGNERS PAGE ************************************ */
+/* **************************** HAMBURGER ************************************ */
 
+jQuery(function($){
+    	     $( '.menu-btn' ).click(function(){
+    	    	 $('.responsive-menu').toggleClass('expand');
+    	    	 //$('#arrow_left_nav').something..();
+    	     });
+});
 
-
+/*
+jQuery(function($){
+    	$( '.menu-btn' ).click(function(){
+    		$('.responsive-menu').addClass('expand');
+    		$('.menu-btn').addClass('btn-none');
+    	});
+    	
+    	 $( '.close-btn' ).click(function(){
+    		$('.responsive-menu').removeClass('expand');
+    		$('.menu-btn').removeClass('btn-none');
+    	});
+  });
+*/
 
 
 
