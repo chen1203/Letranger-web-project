@@ -132,10 +132,14 @@ jQuery(function($){
 
 
 
+/* **************************** Logo ************************************ */
 
 
-
-
+$( window ).resize(function() {
+	var sum=$(window).width()/3.1;
+	console.log(sum);
+  	$("#logo").css("left",sum)
+});
 
 
 
