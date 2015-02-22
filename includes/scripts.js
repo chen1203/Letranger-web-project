@@ -46,6 +46,7 @@ $(document).ready(function(){
 
 /*Background scrolling pictures start*/
 
+/*
 var BackgroundScroll = function(params) {
 	params = $.extend({
 		scrollSpeed: 20,
@@ -76,7 +77,8 @@ var BackgroundScroll = function(params) {
 };
 
 var scroll = new BackgroundScroll();
-scroll.init();
+scroll.init();*/
+
 
 /*Background scrolling end*/
 
