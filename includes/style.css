@@ -500,20 +500,15 @@ footer>section>a:nth-child(5) {
 
 /* Catagory nav */
 
-#arrow_left_nav{
-	display:block;
-	position: absolute;
-	top: 163px;
-	left: 0px;
-	background: url(../images/Catagory/big_arrow.png) no-repeat;
-	width: 31px;
-	height: 38px;
-}
-#left_nav { 
-	width: 252px; 	/* was 297 */
-	float: left;
-	margin-left: 45px;
-/*	background: url(../images/check/catagory_left_nav2.png) no-repeat; */
+
+#left_nav{
+		float: left;
+		margin-left: 45px;
+/*		-webkit-transition: all 0.5s ease;
+    	-moz-transition: all 0.5s ease;
+    	-o-transition: all 0.5s ease;
+    	transition: all 0.5s ease;
+  */  	transition: all 1s ease;
 }
 #left_nav>article{
 	background: url(../images/Catagory/nav_seperate_line.png) top,
@@ -577,6 +572,7 @@ footer>section>a:nth-child(5) {
 #products_area{ 
 		width: 708px;
 		float: left;
+		transition: all 1s ease;
 }
 #products_area>article:first-child{
 	background: url(../images/Catagory/main_seperate_line.jpg) top,
@@ -644,18 +640,35 @@ footer>section>a:nth-child(5) {
 
 @media(min-width: 851px)  {
 	
-	#left_nav{
+#arrow_left_nav{
+	display:block;
+	position: absolute;
+	top: 163px;
+	left: 0px;
+	background: url(../images/Catagory/big_arrow.png) no-repeat;
+	width: 31px;
+	height: 38px;
+}
+
+
+#left_nav{
+		width: 252px; 	
 		display: block;
-	}
+		position: relative;
+		left: 0px;
+/*		transition: all 1s ease; */
+}
 	
-	#arrow_left_nav{
+.kuku2{
+		width: 252px; 	
 		display: block;
-	}
+		position: relative;
+		left: 0px;
+}	
 	
 }
 
 @media(max-width:850px) {
-
 		
 	#menu-btn{
 		position: absolute;
@@ -685,13 +698,32 @@ footer>section>a:nth-child(5) {
 		background: #FFFFFF; 
 		z-index: 99;
 	}
+
+	#left_nav {
+	/*	transition: all 1s ease; */
+		position: relative;
+		visibility: hidden;
+		width: 0px;
+		left: -300px;
+	}
+	
+	.kuku{
+		position: relative;
+		visibility: hidden;
+		width: 0px;
+		left: -300px;	
+	}
 	 
 	.responsive-menu{
-	/*	display: none; */ 
+/*		width: 0px;
+		left: -200px;
+		position: relative;
+		visibility: hidden;
+*/	/*	display: none; */ 
 	}
 	 
 	.expand {
-		display: block !important; 
+	/*	display: block !important; */ 
 	}	
 	
 	.products_area_center{ 
@@ -700,12 +732,4 @@ footer>section>a:nth-child(5) {
 		margin: 0px auto;
 	}
 
-	#left_nav{
-		display: none;
-	}
-	#arrow_left_nav{
-		display: none;
-	}
-	
-	
 }
