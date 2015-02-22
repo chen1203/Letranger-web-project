@@ -37,13 +37,14 @@ header>nav {
 }
 .top_menu>li>a {
 	display: block;
+	margin: auto;
 	text-align: center;
 	color: #ffffff;
 	text-decoration: none;
 	padding-top: 7px;						
 	font-family: Arial;
 	font-size: 13px;
-	width: 100%;
+	width: 100px;
 	height: 21px;
 	text-shadow:0px -1px 1px #222222;
 }
@@ -507,20 +508,20 @@ footer>section>a:nth-child(5) {
 	width: 31px;
 	height: 38px;
 }
-#left_nav { 
+.left_nav { 
 	width: 252px; 	/* was 297 */
 	float: left;
 	margin-left: 45px;
 /*	background: url(../images/check/catagory_left_nav2.png) no-repeat; */
 }
-#left_nav>article{
+.left_nav>article{
 	background: url(../images/Catagory/nav_seperate_line.png) top,
 						url(../images/Catagory/nav_seperate_line.png) bottom;
 	background-repeat: no-repeat;
 	width: 252px;
 	height: 27px; 
 }	
-#left_nav h1{
+.left_nav h1{
 	color: #FFFFFF;
 	font-family: arial;
 	font-size: 16px;
@@ -571,9 +572,9 @@ footer>section>a:nth-child(5) {
 
 /* main in catagory page and designer page */
 
+
 #products_area{ 
-	float: left;
-	width: 708px;
+		width: 708px;
 }
 #products_area>article:first-child{
 	background: url(../images/Catagory/main_seperate_line.jpg) top,
@@ -636,6 +637,43 @@ footer>section>a:nth-child(5) {
 }
 
 /* **************************** HAMBURGER ********************************/
+#hamburger{
+	display:none;
+}
+
+.panel {
+    position: fixed;
+    left: -15.625em; /*left or right and the width of your navigation panel*/
+    width: 15.625em; /*should match the above value*/
+}
+
+.menu-link {
+  position: absolute;
+  font-size: 1.5em;
+}
+
+.menu-link:link,
+.menu-link:visited {
+  color: #fff;
+  background: rgba(0, 0, 0, .4);
+  border-radius: 4px;
+  padding: .2em .4em;
+}
+
+.menu-link:hover,
+.menu-link:active {
+  color: #25B89A;
+  background: rgba(0, 0, 0, .6);
+}
+
+
+/*
+#menu-btn{
+	position: absolute;
+	top: 0px;
+	left: 10px;
+	z-index: 99;
+}
 
 .menu-btn div {
 	position: absolute;
@@ -647,7 +685,6 @@ footer>section>a:nth-child(5) {
 	font-size: 18px;
 	font-weight: 200;
 	vertical-align: middle;
-	z-index: 99;
 }
  
 .menu-btn span {
@@ -655,7 +692,7 @@ footer>section>a:nth-child(5) {
 	width: 19px;
 	height: 3px;
 	margin: 4px 0;
-	background: rgb(0,0,0);
+	background: #FFFFFF; 
 	z-index: 99;
 }
  
@@ -666,3 +703,5 @@ footer>section>a:nth-child(5) {
 .expand {
 	display: block !important; 
 }
+*/
+

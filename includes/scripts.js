@@ -99,12 +99,17 @@ $(document).ready(function () {
 
 /* **************************** HAMBURGER ************************************ */
 
+
+
+/*
 jQuery(function($){
     	     $( '.menu-btn' ).click(function(){
     	    	 $('.responsive-menu').toggleClass('expand');
     	    	 //$('#arrow_left_nav').something..();
     	     });
 });
+*/
+
 
 /*
 jQuery(function($){

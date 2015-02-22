@@ -56,3 +56,51 @@ $.getJSON("includes/designers.json",function(data){
 	
 	
 });
+
+/* ******************************* HAMBURGER ******************************** */
+
+$(document).ready(function () { 
+	
+	console.log("the document width start is: "+ $(document).width() );
+	console.log("the window width start is: "+ $(window).width() );
+
+/* for web!!! */	
+//	$('#otherPages .wrapper').removeClass('wrap').removeClass('push');
+//	$('.left_nav').removeAttr('id');
+//	$('#products_area').removeClass('wrap').removeClass('push');
+	$('#products_area').css('float','left');
+	$('#arrow_left_nav').css('display','block');		
+	$('#hamburger').css('display','none');
+	
+	
+	$(window).resize(function(){
+		var widthS = $( window ).width();
+		if ( widthS < 850 ) {
+			console.log("the width is: "+ widthS);
+			$('.menu_link').css("display","block");
+			$('.menu-link').bigSlide();
+			$('#otherPages #wrapper').addClass('wrap').addClass('push');
+			$('.left_nav').attr('id','menu2');
+		//	$('.left_nav').css('visibility','none');
+		//	$('.left_nav').hide();		
+			$('#products_area').addClass('wrap').addClass('push');
+		//	$('#products_area').css('float','none');
+			$('#products_area').css('margin','auto');				
+			$('#arrow_left_nav').css('display','none');
+			$('#hamburger').css('display','block');	
+			
+		}
+		else {
+	//		$('#otherPages #wrapper').removeClass('wrap').removeClass('push');
+			$('.left_nav').removeAttr('id');
+			$('.left_nav').css('display','block');
+	//		$('#products_area').removeClass('wrap').removeClass('push');
+			$('#products_area').css('float','left');
+			$('#arrow_left_nav').css('display','block');		
+			$('#hamburger').css('display','none');
+		}
+		 		
+	  });
+	
+        
+});	
