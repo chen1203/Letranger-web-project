@@ -110,7 +110,7 @@ jQuery(function($){
 	
 	$( window ).resize(function() {
 	
-		var widthS = $('window').width();
+		var widthS = $(window).width();
 		if (widthS < 850) {
 			tablet = 1;
 			
@@ -131,13 +131,14 @@ jQuery(function($){
 		$('#menu-btn').click(function(){
 			console.log("hjhj");
 			if ($("#menu-btn").hasClass("closed")) {
+				 console.log("Has class closed");
 	    		 $('#left_nav').animate({width:'252px',left:'0px'}, 'slow'); 	 
 	    	   	 $('#left_nav').css('visibility','visible');			
 
-	    		 $('#menu-btn').removeClass('closed');
+	    		 $('#menu-btn').removeClass("closed");
 			}
 			else {
-		    	 	console.log("14124124");
+		    	 	console.log(" dont have class closed");
 		    	 	 $('#left_nav').animate({width:'0px',left:'-300px'}, 'slow'); 	 
 		    	   	 $('#left_nav').css('visibility','none');
 
@@ -181,7 +182,7 @@ jQuery(function($){
 /* **************************** Logo ************************************ */
 
 
-$( window ).resize(function() {
+$(window).resize(function() {
 	var sum=$(window).width()/3.1;
   	$("#logo").css("left",sum)
 });
