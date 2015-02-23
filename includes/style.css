@@ -361,7 +361,7 @@ footer>section>a:nth-child(5) {
 }
 #designers_menu>li>a:hover{
 	color:#FFFFFF;
-	font-weight: bold;
+	font-weight: 500;
 }
 
 /* ------------------------------------------------- Textual pages ------------------------------------------------- */
