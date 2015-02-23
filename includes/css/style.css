@@ -169,7 +169,7 @@ footer>section>a:nth-child(5) {
 }
 #openFooter{
 	display: none;
-	bottom: 28px;
+	bottom: 32px;
 	background-color: #171717;
 	position:fixed;
 	width:100%;
