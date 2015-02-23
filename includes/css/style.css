@@ -29,7 +29,6 @@ header,main, nav,footer, section, article, aside,body {
 	font-weight: 300;
 }
 
-
 /*----------------------- top menu ----------------------- */
 #hp header,#textual_pages header {
 	height: 146px;
@@ -67,7 +66,7 @@ header>nav {
 }
 #logo {
 	padding: 49px 0px 35px 0px;
-	font-family: Lato, Arial, Helvetica, sans-serif;
+	font-family: Lato, Arial;
 	color: #FFFFFF;
 	font-size: 28px;
 	font-weight: normal;
@@ -269,7 +268,7 @@ footer>section>a:nth-child(5) {
 }
 #openFooterCentered>section:nth-child(2)>h2{
 	font-size: 14px;
-	font-family: Arial; /* NEED TO CHANGE TO DIFERENT FONT*/
+	font-family: Lato, Arial; 
 	color:#ffffff;
 	top:13px;
 	left:65px;
