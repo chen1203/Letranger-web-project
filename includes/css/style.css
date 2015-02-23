@@ -1,23 +1,36 @@
  @import url(http://fonts.googleapis.com/css?family=Lato);
 
-/* --------------------------------------------------- All pages --------------------------------------------------- */
+/* ****************************************** All pages ****************************************** */
 * {
 	 margin:0px ; 
 	 padding:0px;
 }
-header,main,footer, nav, section, article, aside,body {
+header,main, nav,footer, section, article, aside,body {
 	display: block;	
 }
 #hp>#wrapper,#textual_pages>#wrapper {
 	width : 1005px;	
-	margin: 282px auto 0px auto;
+	margin: 282px auto 0px auto; 
 }
-#wrapper>main { 	/* for spacing in small laptop */ 
-	margin-bottom: 80px;
+#wrapper>main { 	/* for spacing from bottom in small screens */ 
+	margin-bottom: 80px; 
+}
+/* GLORY hover in article page and footer */
+#loginLogout>input:nth-child(5):hover,#loginLogout>input:nth-child(6):hover,
+.read_more_link:hover,footer>section>a:hover{
+	text-shadow: 0px 0px 6px rgba(255,255,255,1);		/* glory */
+}
+#designers_menu>li>a:hover{
+	color:#FFFFFF;
+	font-weight: 500;
+}
+#openFooterCentered>section:nth-child(2)>a:hover,#loginLogout>a:nth-child(3):hover,#loginLogout>a:nth-child(4):hover{
+	color:#FFFFFF;
+	font-weight: 300;
 }
 
 
-/*----------------------- main menu ----------------------- */
+/*----------------------- top menu ----------------------- */
 #hp header,#textual_pages header {
 	height: 146px;
 	position: relative;
@@ -64,6 +77,7 @@ header>nav {
 	top: 19%;
 }
 /*----------------------- static aside ----------------------- */
+
 /* fixed links to facebook and contact us */ 
 aside {
 	position: fixed;
@@ -80,11 +94,11 @@ aside>a {
 	text-decoration: none;
 }
 aside>a:nth-child(1) {
-	background: #000000 url(../images/facebook.jpg);
+	background: #000000 url(../../images/facebook.jpg);
 	background-repeat: no-repeat;
 }
 aside>a:nth-child(2) {
-    background: #000000 url(../images/contact_us.jpg);
+    background: #000000 url(../../images/contact_us.jpg);
     background-repeat: no-repeat;
     margin-top:13px;
 }
@@ -96,17 +110,18 @@ aside>a:nth-child(2)>p {
 	white-space:nowrap;
     transform-origin:50% 50%;   
     transform: rotate(90deg);
-    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    -webkit-transform: rotate(90deg); 
    	-moz-transform: rotate(90deg); 
     -o-transform: rotate(90deg);
 }
 /*----------------------- footer and open footer----------------------- */
 footer {
-	background: #000000 url(../images/footer.jpg) no-repeat bottom;
+	background: url(../../images/footer.jpg) no-repeat bottom; 
+	background-size: 2211px 32px;
 	height: 32px;
 	width: 100%; 
-	/*bottom: 0px;*/
-	/*position: fixed;*/
+	bottom: 0px;
+	position: fixed;
 }
 footer>section {
 	height: 32px;
@@ -126,12 +141,11 @@ footer>section>a:nth-child(1) {
 	font-size: 13px;
 	left: 42px;
 }
-/*footer>section>a:nth-child(2) { */
 #login_logout-slide{
 	font-size: 13px;
 	left: 91px;
 	width: 54px;
-	background-image: url(../images/footer_up_arrow.png); 
+	background-image: url(../../images/footer_up_arrow.png); 
 	background-repeat: no-repeat ;
 	background-position: right 4px;		
 }
@@ -139,7 +153,7 @@ footer>section>a:nth-child(3) {
 	font-size: 14px;
 	left: 446px;
 	width: 125px;
-	background-image: url(../images/footer_up_arrow.png) ;
+	background-image: url(../../images/footer_up_arrow.png) ;
 	background-repeat: no-repeat ;
 	background-position:  103px 5px;	
 }
@@ -147,7 +161,7 @@ footer>section>a:nth-child(4) {
 	font-size: 12px;
 	right: 94px;
 	width: 50px;
-	background: url(../images/footer_vertical_bar.jpg) no-repeat right 3px;	
+	background: url(../../images/footer_vertical_bar.jpg) no-repeat right 3px;	
 }
 footer>section>a:nth-child(5) {
 	font-size: 12px;
@@ -165,7 +179,7 @@ footer>section>a:nth-child(5) {
 	height: 122px;
 	width : 1005px;
 	margin: 0 auto;
-	background: #171717 url(../images/open_footer_line.jpg) no-repeat 385px;
+	background: #171717 url(../../images/open_footer_line.jpg) no-repeat 385px;
 }
 #loginLogout{
 	height:122px;
@@ -182,7 +196,6 @@ footer>section>a:nth-child(5) {
 }
 #loginLogout>p:nth-child(1){
 	padding-top:13px;
-	
 }
 #loginLogout>p>label{
 	padding-right:21px;
@@ -214,7 +227,7 @@ footer>section>a:nth-child(5) {
 	width:70px;
 	height:13px;
 	left: 138px;
-	background: url(../images/small_form_bar.jpg) no-repeat right 4px; 
+	background: url(../../images/small_form_bar.jpg) no-repeat right 4px; 
 }
 #loginLogout>a:nth-child(4){
 	right: 54px;
@@ -228,16 +241,12 @@ footer>section>a:nth-child(5) {
 	height:18px;
 	text-align: center;
 	position: absolute;
-	background: url(../images/form_buttons.jpg) no-repeat;
+	background: url(../../images/form_buttons.jpg) no-repeat;
 	border:none;
 	text-shadow:0px -1px 1px #222222;
 }
 #loginLogout>input:nth-child(5):focus,#loginLogout>input:nth-child(6):focus{
     outline: 0;
-}
-#loginLogout>input:nth-child(5):hover,#loginLogout>input:nth-child(6):hover{
-	text-shadow: 0px 0px 6px rgba(255,255,255,1);		/* glory */
-	font-size: 14px;
 }
 #loginLogout>input:nth-child(5){
 	left:202px;	
@@ -290,24 +299,15 @@ footer>section>a:nth-child(5) {
 	top:87px;
 	left:159px;
 }
-.activeOnlineShop{
-/*	background: url(../images/down_arrow.png) no-repeat 103px 5px !important; */ 
-}
-.activeLoginLogout{
-/*	background: url(../images/down_arrow.png) no-repeat right 4px !important; */	
-}
-/* --------------------------------------------------- Home page --------------------------------------------------- */
 
-/* home page background */ 
+/* ****************************************** Home page ****************************************** */
+
 #hp {
-	background: #000000 url(../images/hp_bg.jpg) repeat-x top;
-/*	background-size: 2211px 310px; */ 
+	background: #000000 url(../../images/hp_bg.jpg) repeat-x top; 
 }
-/* first section in home page - title LETRANGER*/
 #hp_info {
-	/*height : 100px;*/
-	background: #000000 url(../images/line.jpg) no-repeat 40px bottom;	
-/*	background-size: 917px 1px; */ 
+	height : 100px;
+	background: #000000 url(../../images/line.jpg) no-repeat 40px bottom;	
 }
 #hp_info>p {
 	font-family: Arial;
@@ -316,11 +316,10 @@ footer>section>a:nth-child(5) {
 	line-height: 27px;
 	padding: 2px 45px 17px 36px;		
 }
-/* second section in home page*/
 #designers_area {
 	height : 120px;
 	width: 1005px;
-	background: #000000 url(../images/line.jpg) no-repeat 40px 101px; 
+	background: #000000 url(../../images/line.jpg) no-repeat 40px 101px; 
 }  
 #designers_area>h2 {	
 	font-family: Arial;
@@ -328,14 +327,14 @@ footer>section>a:nth-child(5) {
 	font-size: 16px;
 	font-weight: bold;
 	-webkit-font-smoothing: antialiased;
-	background: #000000 url(../images/down_arrow.png) no-repeat 102px 4px;
+	background: #000000 url(../../images/down_arrow.png) no-repeat 102px 4px;
 	margin: 18px 0px 0px 443px;
 }
 #designers_area>nav {
 	height: 50px;
 	width: 1005px;
 	margin-top: 12px;
-	background: #000000 url(../images/right_big_arrow.png) no-repeat 914px 0px;
+	background: #000000 url(../../images/right_big_arrow.png) no-repeat 914px 0px;
 	background-size: 42px 50px; 
 }
 #designers_menu {
@@ -346,7 +345,7 @@ footer>section>a:nth-child(5) {
 #designers_menu>li {
 	float: left;
 	padding: 0px 13px 0px 14px;
-	background: #000000 url(../images/vertical_bar.jpg) no-repeat right center;	
+	background: #000000 url(../../images/vertical_bar.jpg) no-repeat right center;	
 }
 #designers_menu>li:last-child {
 	background: none;
@@ -359,24 +358,18 @@ footer>section>a:nth-child(5) {
 	font-family: Arial;
 	font-size: 14px;
 }
-#designers_menu>li>a:hover{
-	color:#FFFFFF;
-	font-weight: 500;
-}
 
-/* ------------------------------------------------- Textual pages ------------------------------------------------- */
+/* ****************************************** Textual pages ****************************************** */
 
 #textual_pages {
-	background: #000000 url(../images/textual_pages_bg.jpg) repeat-x  top;
-	background-size: 2211px 310px; 
+	background: #000000 url(../../images/textual_pages_bg.jpg) repeat-x  top;
 }
 
-/* --------------------------------------------------- About page --------------------------------------------------- */
+/* ****************************************** About page ****************************************** */
 
 #about_info {
-	/*height : 230px; /* 207 */
 	width: 1005px;
-	background: url(../images/main_bar.jpg) no-repeat 40px top, url(../images/line.jpg) no-repeat 40px bottom;
+	background: url(../../images/main_bar.jpg) no-repeat 40px top, url(../images/line.jpg) no-repeat 40px bottom;
 }
 #about_info>h1,#articles_title>h1 {
 	font-family: Arial;
@@ -393,15 +386,14 @@ footer>section>a:nth-child(5) {
 	padding: 24px 45px 25px 40px;
 } 
 
-/* --------------------------------------------------- Articles page --------------------------------------------------- */
+/* ****************************************** Articles page ****************************************** */
 
 #articles_title {
 	height : 27px; 
-	background: url(../images/main_bar.jpg) no-repeat 40px top;
+	background: url(../../images/main_bar.jpg) no-repeat 40px top;
 	width: 1005px;
 	position: relative;
 }
-/*the styling of h1 is in about page*/
 #articles_types{
 	list-style-type: none;
 	display: inline-block;
@@ -413,7 +405,7 @@ footer>section>a:nth-child(5) {
 #articles_types>li {
 	float: left;
 	padding: 0px 13px 0px 14px;
-	background: url(../images/vertical_bar.jpg) no-repeat right center;	
+	background: url(../../images/vertical_bar.jpg) no-repeat right center;	
 }
 #articles_types>li:last-child {
 	background: none;
@@ -426,30 +418,17 @@ footer>section>a:nth-child(5) {
 	font-family: Arial;
 	font-size: 13px;
 }
-#articles_types>li>a:hover {
+#articles_types>li>a:hover,#articles_types>li>.selected {
 	color: #FFFFFF;
 	font-weight: bold;
 }
-#articles_types>li>.selected{
-	color: #FFFFFF;
-	font-weight: bold;
-} 
-/*#articles_types>li:first-child>a {
-	color: #FFFFFF;
-} */
 #all_articles{
 	height : 342px;
 }
 #all_articles>article{
 	width: 1005px;
-	background:url(../images/line.jpg) no-repeat 40px bottom;
+	background:url(../../images/line.jpg) no-repeat 40px bottom;
 	position: relative; 	
-}
-#all_articles>article:nth-child(1){
-	/*height : 168px;*/
-}
-#all_articles>article:nth-child(2){
-	/*height : 173px;*/
 }
 #all_articles>article:nth-child(1)>h2{
 	padding: 30px 45px 0px 39px;
@@ -473,7 +452,7 @@ footer>section>a:nth-child(5) {
 	display: block;
 	width: 78px;
 	height: 18px;
-	background:url(../images/read_more.jpg) no-repeat;
+	background:url(../../images/read_more.jpg) no-repeat;
 	position: absolute;
 	right: 47px;
 	bottom: 1px;
@@ -486,9 +465,11 @@ footer>section>a:nth-child(5) {
 	font-size: 12px;
 	color: #FFFFFF;
 }
-/* **************************** otherPages ********************************/
+
+/* ****************************************** otherPages ****************************************** */
+
 #otherPages{
-	background: #000000 url(../images/nav_bg.jpg) repeat-x top;
+	background: #000000 url(../../images/nav_bg.jpg) repeat-x top;
 }
 #otherPages> #wrapper{
 	width : 1005px;	
@@ -504,23 +485,23 @@ footer>section>a:nth-child(5) {
 	margin-top: 11px;
 }
 
-/* **************************** Category Page ********************************/
+/* ****************************************** Category Page ****************************************** */
 
-/* Catagory nav */
+/*----------------------- Category nav ----------------------- */
 
 #left_nav{
 		position: relative;
 		float: left;
 		margin-left: 45px;
-		-webkit-transition: all 1s ease;
-    	-moz-transition: all 1s ease;
-    	-o-transition: all 1s ease;
-    	transition: all 1s ease;
-	  	transition: all 1s ease;
+		-webkit-transition: all 0.8s ease;
+    	-moz-transition: all 0.8s ease;
+    	-o-transition: all 0.8s ease;
+    	transition: all 0.8s ease;
+	  	transition: all 0.8s ease;
 }
 #left_nav>article{
-	background: url(../images/Catagory/nav_seperate_line.png) top,
-						url(../images/Catagory/nav_seperate_line.png) bottom;
+	background: url(../../images/Category/nav_seperate_line.png) top,
+						url(../../images/Category/nav_seperate_line.png) bottom;
 	background-repeat: no-repeat;
 	width: 252px;
 	height: 27px; 
@@ -537,9 +518,8 @@ footer>section>a:nth-child(5) {
 #outer_menu>li{
 	padding-top: 7px;
 }
-/*#outer_menu>li:first-child>a{ */
 .selected_designer,#outer_menu>li>a:hover{
-	background: url(../images/Catagory/selected_bg.png) no-repeat 0px 1px;
+	background: url(../../images/Category/selected_bg.png) no-repeat 0px 1px;
 }
 #outer_menu>li>a {
 	font-size: 11px; 
@@ -556,7 +536,7 @@ footer>section>a:nth-child(5) {
 	padding-top: 13px;	
 }
 #inner_menu>li{
-	background-image: url(../images/Catagory/menu_arrow.png); 
+	background-image: url(../../images/Category/menu_arrow.png); 
 	background-repeat: no-repeat;
 	background-position: 3px 5px ;
 	padding-left: 15px;
@@ -567,32 +547,31 @@ footer>section>a:nth-child(5) {
 	font-size: 12px;
 }
 #inner_menu>li:hover{
-	background-image: url(../images/Catagory/menu_arrow_selected.png)
+	background-image: url(../../images/Category/menu_arrow_selected.png)
 }
 #inner_menu a:hover{
 	color: #FFFFFF;	
 	font-weight: bold;
 }
 #inner_menu>.selected{
-	background-image: url(../images/Catagory/menu_arrow_selected.png);
+	background-image: url(../../images/Category/menu_arrow_selected.png);
 }  
 #inner_menu>.selected>a{	
 	color: #FFFFFF;	
 	font-weight: bold;
 }
 
-/* main in catagory page and designer page */
-
+/* ------ main in category page and designer page ------ */
 
 #products_area{ 
 		width: 708px;
 		float: left;
-		transition: all 1s ease;
+		transition: all 0.8s ease;
 }
 #products_area>article:first-child{
-	background: url(../images/Catagory/main_seperate_line.jpg) top,
-						url(../images/Catagory/main_headline.jpg) 0px 1px,
-						url(../images/Catagory/main_seperate_line.jpg) bottom;
+	background: url(../../images/Category/main_seperate_line.jpg) top,
+						url(../../images/Category/main_headline.jpg) 0px 1px,
+						url(../../images/Category/main_seperate_line.jpg) bottom;
 	background-repeat: no-repeat;
 	width: 666px;
 	height: 27px;	
@@ -623,7 +602,7 @@ footer>section>a:nth-child(5) {
 	line-height: 15px;	
 }
 
-/* **************************** Designers Page ********************************/
+/* ****************************************** Designers Page ****************************************** */
 
 #designer_name_title{
 	font-size: 12px;
@@ -642,27 +621,24 @@ footer>section>a:nth-child(5) {
 	margin-top: 15px;
 }
 
-/* **************************** HAMBURGER ********************************/
-
-
+/*----------------------- HAMBURGER ----------------------- */
 
 @media(min-width: 851px)  {
-	
-#arrow_left_nav{
-	display:block;
-	position: absolute;
-	top: 163px;
-	left: 0px;
-	background: url(../images/Catagory/big_arrow.png) no-repeat;
-	width: 31px;
-	height: 38px;
-}
-
-#left_nav{
+		
+	#arrow_left_nav{
+		display:block;
+		position: absolute;
+		top: 163px;
+		left: 0px;
+		background: url(../../images/Category/big_arrow.png) no-repeat;
+		width: 31px;
+		height: 38px;
+	}
+	#left_nav{
 		width: 252px;
 		visibility: visible;
 		left: 0px;
-}
+	}
 	
 }
 
@@ -674,7 +650,6 @@ footer>section>a:nth-child(5) {
 		left: 10px;
 		z-index: 99;
 	}
-	
 	.menu-btn div {
 		position: absolute;
 		left: 100%;
@@ -687,7 +662,6 @@ footer>section>a:nth-child(5) {
 		vertical-align: middle;
 		z-index: 99; 
 	}
-	 
 	.menu-btn span {
 		display: block;
 		width: 19px;
@@ -696,8 +670,7 @@ footer>section>a:nth-child(5) {
 		background: #FFFFFF; 
 		z-index: 99;
 	}
-
-#left_nav {
+	#left_nav {
 		visibility: hidden; 
 		width: 0px;
 		left: -300px;
