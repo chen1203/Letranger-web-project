@@ -120,7 +120,7 @@ aside>a:nth-child(1):hover,aside>a:nth-child(2):hover{
 /*----------------------- footer and open footer----------------------- */
 
 footer {
-	background: url(../../images/footer.jpg) repeat-x;
+	background: url(../../images/footer.jpg) repeat-x center center;
 	height: 32px;
 	width: 100%; 
 	bottom: 0px;
