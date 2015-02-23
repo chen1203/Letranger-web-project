@@ -85,26 +85,10 @@ scroll.init();*/
 
 
 /* **************************** CATAGORY PAGE ************************************ */
-/*
-$(document).ready(function () { 
-	$('#articles_types>li:first-child>a').addClass('selected');
-//	$('#inner_menu>li:first-child').addClass('selected_jackets');
-
-	$("#articles_types li").click(function() {
-    	//this.id = 'newId';
-
-    	// longer method using .attr()
-    	$(this).addClass('selected');
-	});
-    
-});*/
 
 
 
 /* **************************** HAMBURGER ************************************ */
-
-
-
 
 
 $(document).ready(function(){
@@ -129,43 +113,22 @@ $(document).ready(function(){
 $(document).ready(function(){
 		
 		$('#menu-btn').click(function(){
-			console.log("hjhj");
 		
-			if ($("#menu-btn").hasClass("closed")) {
-				 console.log("Has class closed");
-	    		 $('#left_nav').animate({width:'252px',left:'0px'}, 'slow'); 	 
-	    	   	 $('#left_nav').css('visibility','visible');			
-
-	    		 $('#menu-btn').removeClass("closed");
-			}
-			else {
-		    	 	console.log(" dont have class closed");
-		    	 	 $('#left_nav').animate({width:'0px',left:'-300px'}, 'slow'); 	 
-		    	   	 $('#left_nav').css('visibility','none');
-
-		    	   	 $('#menu-btn').addClass("closed");
-		    	 }
+				if ($("#menu-btn").hasClass("closed")) {
+	
+		    		 $('#left_nav').animate({width:'252px',left:'0px'}, 'slow'); 	 
+		    	   	 $('#left_nav').css('visibility','visible');			
+		    		 $('#menu-btn').removeClass("closed");
+				}
+				else {
+			    	 	 $('#left_nav').animate({width:'0px',left:'-300px'}, 'slow'); 	 
+			    	   	 $('#left_nav').css('visibility','none');
+			    	   	 $('#menu-btn').addClass("closed");
+			     }
     
     	});
     	     
 });
-
-
-
-
-/*
-jQuery(function($){
-    	$( '.menu-btn' ).click(function(){
-    		$('.responsive-menu').addClass('expand');
-    		$('.menu-btn').addClass('btn-none');
-    	});
-    	
-    	 $( '.close-btn' ).click(function(){
-    		$('.responsive-menu').removeClass('expand');
-    		$('.menu-btn').removeClass('btn-none');
-    	});
-  });
-*/
 
 
 
@@ -195,49 +158,6 @@ $(window).resize(function() {
 
 
 
-/*
-//for all:
-$(document).ready(function(){
-    $.getJSON("includes/designers.json",function(data){
-            //	$('#designer_name_title').html(data.name);
-            //	$('#dataServices').append("<ul>");
-       			
-       			$.each(data.platform, function () {
-            			//console.log(this.id);
-            			//$('#dataServices').append("<li><a href='book.html?bookId=" + this.id + "'>" + this.type + "</a></li>");
-            			//for one page logic: 
-            			$('#dataServices').append("<li><a href='#' onclick='prompBook(bookId=" + this.id + ")'>" + this.type + "</a></li>");
-       			});
-            	$('#dataServices').append("</ul>");
-            	//console.log($('#dataServices').html());
-    });
-});
-
-$(document).ready(function(){
-    $.getJSON("includes/designers.json",function(data){
-      //var sHTML = "<ul>";      
-      
-      $.each(data, function(key, val){
-		  console.log(val);
-		   $.each(val, function(key2, val2){
-			  //	sHTML += "key + "</b>:" + val.name + "</li>";
-			  console.log(key2+" -- "+val2.name);
-			});
-	  });		
-		
-		
-		//sHTML += "</ul>";
-		//console.log("sHTML: "+sHTML);
-		//$('#dataServices').append(sHTML);        
-    });
-});
-
-
-
-*/
-
-
-
 
 
 
@@ -260,13 +180,4 @@ $(document).ready(function(){
    }
 });*/;
 
-
-/* footer up and down from Yonit */
-	
-//	var postionFotter = $( "#openFooter" );
-//	var position = postionFotter.position();
-//$("#openFooter").css({ "bottom": position.bottom-28,"left":position.left});
-//	var bottom = $(window).height() - 150;
-//	console.log("%%%%%%%%%%   bottom: "+position.botom+" left: "+ position.left+" bottom : "+bottom);
-//	$("#openFooter").css({ "bottom": 28,"left":position.left});
 
