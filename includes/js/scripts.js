@@ -84,7 +84,7 @@ $(document).ready(function() {
 
 /*----------------------- Background images up ----------------------- */
 
-/*
+
 $(document).ready(function() {
 
 	var BackgroundScroll = function(params) {
@@ -119,4 +119,3 @@ $(document).ready(function() {
 	scroll.init();
 
 });
-*/
