@@ -8,6 +8,7 @@
 header,main, nav,footer, section, article, aside,body {
 	display: block;	
 }
+/* dfgd */
 #hp>#wrapper,#textual_pages>#wrapper {
 	width : 1005px;	
 	margin: 282px auto 0px auto; 
