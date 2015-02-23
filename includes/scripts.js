@@ -159,6 +159,15 @@ $(window).resize(function() {
 
 
 
+$(document).ready(function() {
+
+    $('ul li a').each(function() {
+
+        $(this).css('width', $(this).width() + 10);
+
+    });
+
+});
 
 
 

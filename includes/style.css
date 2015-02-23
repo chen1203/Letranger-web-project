@@ -359,6 +359,10 @@ footer>section>a:nth-child(5) {
 	font-family: Arial;
 	font-size: 14px;
 }
+#designers_menu>li>a:hover{
+	color:#FFFFFF;
+	font-weight: bold;
+}
 
 /* ------------------------------------------------- Textual pages ------------------------------------------------- */
 

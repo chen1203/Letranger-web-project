@@ -45,6 +45,7 @@ $.getJSON("includes/designers.json",function(data){
             $('#'+desNameWithSep+'').addClass("selected_designer");
 	    }
 	});
+	 document.title = designerName; // Set the title to designer name
 	$("#designer_name_title").prepend(designerName +" &nbsp;\\&nbsp; mens suits");
 	$("#designer_desc>p").html(designerDescription);
 		$.each( designerPics, function( i, pic ) {
