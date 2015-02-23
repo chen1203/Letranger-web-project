@@ -115,9 +115,9 @@ aside>a:nth-child(2)>p {
     -o-transform: rotate(90deg);
 }
 /*----------------------- footer and open footer----------------------- */
+
 footer {
-	background: url(../../images/footer.jpg) no-repeat bottom; 
-	background-size: 2211px 32px;
+	background: url(../../images/footer.jpg) repeat-x;
 	height: 32px;
 	width: 100%; 
 	bottom: 0px;
@@ -369,7 +369,7 @@ footer>section>a:nth-child(5) {
 
 #about_info {
 	width: 1005px;
-	background: url(../../images/main_bar.jpg) no-repeat 40px top, url(../images/line.jpg) no-repeat 40px bottom;
+	background: url(../../images/main_bar.jpg) no-repeat 40px top, url(../../images/line.jpg) no-repeat 40px bottom;
 }
 #about_info>h1,#articles_title>h1 {
 	font-family: Arial;
@@ -643,7 +643,7 @@ footer>section>a:nth-child(5) {
 }
 
 @media(max-width:850px) {
-		
+
 	#menu-btn{
 		position: absolute;
 		top: 0px;

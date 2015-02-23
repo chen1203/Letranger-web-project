@@ -73,53 +73,48 @@ $(document).ready(function(){
     	     
 });
 
-
-
 /*----------------------- atricles type menu ----------------------- */
 
 $(document).ready(function() {
     
-    $('ul li a').each(function() {
+    $('#articles_types li a').each(function() {
        	 $(this).css('width', $(this).width() );
     });
 });
 
-/*Background scrolling pictures start*/
+/*----------------------- Background images up ----------------------- */
 
-/*
-var BackgroundScroll = function(params) {
-	params = $.extend({
-		scrollSpeed: 20,
-		imageWidth: $('#textual_pages').width(),
-		imageHeight: $('#textual_pages').height(),
-		imageWidthHp: $('#hp').width(),
-		imageHeightHp: $('#hp').height()
-	}, params);
-	
+$(document).ready(function() {
+
+	var BackgroundScroll = function(params) {
+		params = $.extend({
+			scrollSpeed: 60,
+			imageWidth: $('#textual_pages').width(),
+			imageHeight: $('#textual_pages').height(),
+			imageWidthHp: $('#hp').width(),
+			imageHeightHp: $('#hp').height()
+		}, params);
+
 	var step = 1,
 		current = 0,
 		restartPosition = - (params.imageWidth - params.imageHeight);
 	
 	var scroll = function() {
-		current -= step;
-		if (current == restartPosition){
-			current = 0;
-		}	
-		$('#textual_pages').css('backgroundPosition', current + 'px 0');
-		$('#hp').css('backgroundPosition', current + 'px 0');
-	
-	};
-	
+			current -= step;
+			if (current == restartPosition){
+				current = 0;
+			}	
+			$('#textual_pages').css('backgroundPosition', current + 'px 0');
+			$('#hp').css('backgroundPosition', current + 'px 0');
+		};
+
 	this.init = function() {
 		setInterval(scroll, params.scrollSpeed);
 	
+		};
 	};
-};
 
-var scroll = new BackgroundScroll();
-scroll.init();*/
+	var scroll = new BackgroundScroll();
+	scroll.init();
 
-
-
-
-
+});
