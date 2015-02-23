@@ -112,7 +112,7 @@ $(document).ready(function(){
 	$(window).resize(function() {
 	
 		var widthS = $(window).width();
-		
+
 		if (widthS < 850) {
 			$('#menu-btn').addClass('closed');
 			$('#left_nav').css({width:'0px',left:'-300px',visibility:'hidden'});		
@@ -132,14 +132,14 @@ $(document).ready(function(){
 			console.log("hjhj");
 		
 			if ($("#menu-btn").hasClass("closed")) {
+				 console.log("Has class closed");
 	    		 $('#left_nav').animate({width:'252px',left:'0px'}, 'slow'); 	 
 	    	   	 $('#left_nav').css('visibility','visible');			
 
 	    		 $('#menu-btn').removeClass("closed");
 			}
 			else {
-		    	 	console.log("14124124");
-		
+		    	 	console.log(" dont have class closed");
 		    	 	 $('#left_nav').animate({width:'0px',left:'-300px'}, 'slow'); 	 
 		    	   	 $('#left_nav').css('visibility','none');
 
@@ -147,17 +147,6 @@ $(document).ready(function(){
 		    	 }
     
     	});
-    	
-    	
-	
-/*	
-    	     $( '.menu-btn' ).click(function(){
-   
-    	   		 $('#left_nav').animate({width:'252px',left:'0px'}, 'slow'); 	 
-    	    	 $('#left_nav').css('visibility','visible');	
-    	   
-    	     });
-  */  	     
     	     
 });
 
@@ -183,7 +172,7 @@ jQuery(function($){
 /* **************************** Logo ************************************ */
 
 
-$( window ).resize(function() {
+$(window).resize(function() {
 	var sum=$(window).width()/3.1;
   	$("#logo").css("left",sum)
 });
