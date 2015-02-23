@@ -1,22 +1,3 @@
-/*----------------------- Fixed footer  ----------------------- */
-
-/*
-function positionFooter() { 
-	var mFoo = $("footer"); 
-	if ((($(document.body).height() + mFoo.outerHeight()) < $(window).height() && mFoo.css("position") == "fixed") 
-		|| ($(document.body).height() < $(window).height() && mFoo.css("position") != "fixed")) { 
-					mFoo.css({ position: "fixed", bottom: "0px" }); 
-			} 
-	else { mFoo.css({ position: "fixed" }); 
-	} 
-} 
-$(document).ready(function () { 
-	positionFooter();
-	$(window).scroll(positionFooter); 
-	$(window).resize(positionFooter); 
-	$(window).load(positionFooter); 
-});*/
-	
 /*----------------------- Open footer  ----------------------- */
 
 $(document).ready(function(){
@@ -47,7 +28,7 @@ $(document).ready(function(){
 		var widthS = $(window).width();
 		if (widthS < 851) {
 			$('#menu-btn').addClass('closed');
-			$('#left_nav').css({width:'0px',left:'-300px',visibility:'hidden'});		
+			$('#left_nav').css({width:'0px',left:'-300px',visibility:'hidden'});
 		}
 		else {
 			$('#menu-btn').removeClass('closed');
@@ -73,7 +54,7 @@ $(document).ready(function(){
     	     
 });
 
-/*----------------------- atricles type menu ----------------------- */
+/*----------------------- atricles type menu (for hover wont move) ----------------------- */
 
 $(document).ready(function() {
     
@@ -83,7 +64,6 @@ $(document).ready(function() {
 });
 
 /*----------------------- Background images up ----------------------- */
-
 
 $(document).ready(function() {
 
