@@ -62,7 +62,7 @@ header>nav {
 }
 .top_menu>li>a:hover {
 	text-shadow: 0px 0px 6px rgba(255,255,255,1);		/* glory */
-	font-size: 14px;
+/*	font-size: 14px; */
 }
 #logo {
 	padding: 49px 0px 35px 0px;
@@ -72,9 +72,8 @@ header>nav {
 	font-weight: normal;
 	text-decoration: none;
 	position:absolute;
-	left: 42%;
-	top: 19%;
 }
+
 /*----------------------- static aside ----------------------- */
 
 /* fixed links to facebook and contact us */ 
@@ -247,6 +246,7 @@ footer>section>a:nth-child(5) {
 	background: url(../../images/form_buttons.jpg) no-repeat;
 	border:none;
 	text-shadow:0px -1px 1px #222222;
+	cursor:pointer;
 }
 #loginLogout>input:nth-child(5):focus,#loginLogout>input:nth-child(6):focus{
     outline: 0;
@@ -585,19 +585,20 @@ footer>section>a:nth-child(5) {
 	font-size: 12px;
 	padding: 7px 0px 0px 8px;
 }
-.product{
+#products_area>section{
+/*.product{ */
 	display: block;
 	float: left;
 	width: 165px;
 	height: 270px;
 	margin-right: 2px;
 }
-.product>img{
+#products_area>section>img{
 	width: 165px;
 	height: 224px;
 	outline: none;
 }
-.product>p{
+#products_area>section>p{
 	color: #FFFFFF;
 	font-family: arial;
 	font-size: 11px;
@@ -627,7 +628,14 @@ footer>section>a:nth-child(5) {
 /*----------------------- HAMBURGER ----------------------- */
 
 @media(min-width: 851px)  {
-		
+	
+	aside {
+		display: block;
+	}	
+	#logo {
+		left: 42%;
+		top: 19%;
+	}
 	#arrow_left_nav{
 		display:block;
 		position: absolute;
@@ -647,6 +655,13 @@ footer>section>a:nth-child(5) {
 
 @media(max-width:850px) {
 
+	aside {
+		display: none;
+	}
+	#logo {
+		left: 42%;
+		top: 19%;
+	}
 	#menu-btn{
 		position: absolute;
 		top: 0px;
