@@ -43,7 +43,7 @@ $(document).ready(function () {
 		$("#designer_desc>p").html(designerDescription);
 		$.each(designerPics, function(i, pic) {
 			picI = "images/designers/" + designerName + "/" + pic + ".jpg";
-			$('#designer_pics').append("<div> <img u=image src='" + picI + "'> </div> ");
+			$('#designer_pics').append("<div> <img data-u=image src='" + picI + "'> </div> ");
 		});
 		var jssor_slider1 = new $JssorSlider$("slider1_container", options);
 	});
