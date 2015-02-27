@@ -2,17 +2,20 @@
     "designers":
 		[
 			{
-			"name":"RICK OWENS",
+			 "id":"RICK_OWENS",
+			 "name":"RICK OWENS",
 			 "description": "A conceptual space, RICK OWENS to both men and women who likes to make a unique statement with their outfit, regardless of trends and tendencies. L'étranger is a refreshing alternative offering exceptional collections by rather mysterious",
 			 "pics":["IMG_0446-Edit","img_0450","IMG_0473-Edit","img_0474","IMG_0483-Edit","img_0484","IMG_0490-Edit","img_0491","IMG_0510-Edit","img_0513","IMG_1960-Edit","IMG_1966-Edit"]
 			},
 			{
-			"name":"CLAUDE MAUS",
+			 "id":"CLAUDE_MAUS",
+			 "name":"CLAUDE MAUS",
 			 "description": "A conceptual space, CLAUDE MAUS to both men and women who likes to make a unique statement with their outfit, regardless of trends and tendencies. L'étranger is a refreshing alternative offering exceptional collections by rather mysterious",
 			 "pics":["img_7799","IMG_7802-Edit","img_7804","img_7831-L","IMG_7835-Edit-Edit","img_7836-L","img_7879","IMG_7880-Edit"]
 			},
 			{
-			"name":"MARSELL",
+			 "id":"MARSELL",
+			 "name":"MARSELL",
 			 "description": "A conceptual space, MARSELL to both men and women who likes to make a unique statement with their outfit, regardless of trends and tendencies. L'étranger is a refreshing alternative offering exceptional collections by rather mysterious",
 			 "pics":["img_9984","t-1","IMG_9986-Edit","img_9988","p-4","t-2"]
 			}	

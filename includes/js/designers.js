@@ -1,11 +1,9 @@
 $(document).ready(function () { 
 	
-	function getDesignerName() {
+	function getDesignerID() {
 		var aKeyValue = window.location.search.substring(1).split("&");
 		var designer = aKeyValue[0].split("=")[1];
-		designerName = designer.replace(/%[0-9]+/g," ");
-		desNameWithSep = designer.replace(/%[0-9]+/g,"_");
-		return designerName;
+		return designer;
 	};
 
  	var options = {
@@ -27,14 +25,15 @@ $(document).ready(function () {
 
 	$.getJSON("includes/designers.json", function(data) {
 		var designerDescription, designerName, designerPics;
-		var name = getDesignerName();	//get data by url params
-
+		var id = getDesignerID();	//get data by url params
+		
 		$.each(data.designers, function(key, value) {
-			if (value.name == name) {
+			if (value.id == id) {
 				designerName = value.name;
 				designerDescription = value.description;
 				designerPics = value.pics;
-				$('#' + desNameWithSep + '').addClass("selected_designer");
+				$('#' + value.id).addClass("selected_designer");
+				return false; // We found the wanted designer we can exit the each loop
 			}
 		});
 		document.title = designerName;
