@@ -329,7 +329,9 @@ footer>section>a:nth-child(5) {
 	font-weight: bold;
 	-webkit-font-smoothing: antialiased;
 	background: #000000 url(../../images/down_arrow.png) no-repeat 102px 4px;
-	margin: 18px 0px 0px 443px;
+	margin-top: 18px;
+	
+/*	: 18px 0px 0px 443px; */
 }
 #designers_area>nav {
 	height: 50px;
@@ -631,6 +633,9 @@ footer>section>a:nth-child(5) {
 	#logo {
 		left: 42%;
 	}
+	#designers_area>h2 {	
+		margin-left: 443px;
+	}
 	#arrow_left_nav{
 		display:block;
 		position: absolute;
@@ -655,6 +660,9 @@ footer>section>a:nth-child(5) {
 	}
 	#logo {
 		left: 40vw;
+	}
+	#designers_area>h2 {	
+		margin-left: 45vw;
 	}
 	#menu-btn{
 		position: absolute;
