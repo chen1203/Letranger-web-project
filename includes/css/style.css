@@ -470,8 +470,7 @@ footer>section>a:nth-child(5) {
 /* ****************************************** otherPages ****************************************** */
 
 #otherPages{
-	background: #000000 url(../../images/nav_bg.jpg) repeat-x top;
-	background-position-x: initial;
+	background: #000000 url(../../images/nav_bg.jpg) no-repeat top;
 }
 #otherPages> #wrapper{
 	width : 1005px;	
@@ -661,6 +660,9 @@ footer>section>a:nth-child(5) {
 	}
 	#designers_area>h2 {	
 		margin-left: 45vw;
+	}
+	#otherPages{
+		background-position-x: initial;
 	}
 	#menu-btn{
 		position: absolute;
